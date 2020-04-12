@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- The main title-->
+  <title>PRACTICUM NOTES - Basics of HTML, CSS</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="page">
+      <div><img src="../images/practicumnoteslogo.png"></div>
+      <div class="menu">
+       <a href="../practicumnotes-toc.html">Back to Table of Contents</a>
+      </div>
+    <div class="title-course">Basics of HTML, CSS</div>
+    <div class="topic_card">
+      <div class="title-topic">Your First Code</div>
+      <div class="title-part">How Coding Works</div>
+      <div>
+        <p>Many people are attracted by the idea of coding, so why aren't there more programmers?</p>
+        <p>The answer is simple. It takes a certain mindset and a lot of dedication to learn how to code, but not everyone has this. It’s a bit like learning to ride a bike. Finding your balance can be extremely challenging at first, but once you get the hang of it, it's a piece of cake.</p>
+        <p>As such, the primary skill you must develop is finding the strength to overcome uncertainty. We’ll give you a taste of this over the next 20 minutes. We don't expect you to understand everything, this is just for you to see HTML, CSS, and JavaScript in action.</p>
+        <p>After that, we’ll take you through the basics of how these languages work. There are 20 hours of free content to help you get a feel for front-end development and decide whether this is the career for you.</p>
+      </div>
+      </div>
+      <div class="topic_card">
+      <div class="title-topic">HTML</div>
+      <div class="title-part">Let's Start with HTML</div>
+      <div>
+        <p>Much like a Lego house is made of blocks, a webpage is assembled from elements, which are created and organized in <b>HTML</b>. Every page on the Internet has an HTML code and is saved as an HTML file, meaning that when you open a webpage in a browser, you are actually opening an <i>.html</i> file.</p>
+        <p>HTML is made up of tags, which can be recognized by their angle brackets. These tags serve as the building blocks that make up the framework of a webpage. They contain information about the role as well as the beginning and end of every single element. For example, with the help of tags, a browser can differentiate regular text from the text on a button.</p>
+        <p>Your first task at the startup company is to replace the broken Like button.</p>
+      </div>
+      <div class="title-part">Part 1</div>
+      <div class="text_body">
+        <p>Your very first mission, should you choose to accept it, is to make a button with the word Like. First of all, look above the task description block, where you will find a code editor window with an index.html file. All you need to do is enter a single word into the empty line 8 to get started:</p>
+        <p class="text_code-box">Like</p>
+        <p>Once you have accomplished your mission, click the Check button and the window on the right will display the result.</p>
+      </div>
+      <div class="title-part">Part 2</div>
+      <div>
+        <p>If you want your word to be a button, you need to transform the standard text into an HTML element. Look at the line below, for example:</p>
+        <code class="text_code-box"><button>Like</button></button></code>
+        <p>It has an opening tag and a closing tag, which together create a <i>button</i> element. This particular code marks the beginning and the end of the button element on the web page. The word itself will remain inside the button.</p>
+        <p>Now try turning your text into a button and then run the code. Does it work?</p>
+      </div>
+      <div class="title-part">Lesson HTML Code</div>
+      <div><p>View code <a href="0-0_YourFirstCode_code/0-0_YourFirstCode_code-Lesson2_html.txt" target="_blank">HERE</a>.</p></div>
+    </div>
+    <div class="topic_card">
+      <div class="title-lesson">CSS</div>
+      <div class="text_body">
+        <p>Now we know about HTML — a language that is responsible for all the content on a web page. However, in order to change the color and the location of your content, you will have to use CSS. Without it, you wouldn't be able to make your text bright pink and place it in the center of the screen.</p>
+        <p>The description of an element's appearance is called style. CSS is the language of creating style.</p>
+        <p>A styles file has been linked to your project, which already contains some code. Your HTML code can be used to access content from this file. The styles file also contains some comments, which appear as gray text and are enclosed by certain symbols. The browser will ignore these comments, they're just there to give you some extra info.</p>
+        <p>Now let's take a look at this CSS code and start working on the recreation of the button.</p>
+      </div>
+      <div class="title-part">Part 1</div>
+      <div class="text_body">
+        <p>The styles have already been placed in the <i>style.css</i> file in a separate tab of the code editor. You can find this tab next to the <i>index.html</i> file. Go ahead and open it to take a look at the code. The styles are there, but they haven't yet been applied to the button.</p>
+        <p>Now we have to solve this issue. On the second line of the CSS file, we can see an element called <b>buton</b>. This means that the properties inside the curly braces will be applied to any element called <i>buton</i> in the HTML file.</p>
+        <p>Is there an element with this name in the HTML file? Check it and then make the appropriate change to the CSS code.</p>
+      </div>
+      <div class="title-part">Part 2</div>
+      <div class="text_body">
+        <p>Now the button looks kind of old-school like it's from an old Nintendo game. This is cool, but it doesn't fit the style of our website. Our designer wants us to give it a more modern look.</p>
+        <p>Here are the requirements from the designer: font <code class="text_code-inline">- Arial Narrow, size - 20px</code>.</p>
+        <p>Add the following code to the empty line 19 in the <i>style.css</i> file:</p>
+        <code class="text_code-box">
+          /* CSS */
+          /* font settings */
+          font-family: 'Arial Narrow', sans-serif;
+          font-size: 20px;
+        </code>
+        <p>Don’t worry if the CSS code doesn’t make much sense right now. You don’t need to memorize or understand these commands. That will all come later. For now, we’re just observing how CSS behaves while solving specific tasks.</p>
+      </div>
+      <div class="title-part">Part 3</div>
+      <div class="text_body">
+        <p>Links and buttons typically change their appearance when the cursor is hovering over them. This is an indicator that something is going to happen when you click on it.</p>
+        <p>The only visual effect our button has so far is to change the cursor from an arrow to a hand when we hover over it.</p>
+        <p>Now let's make a crimson shadow for when a cursor hovers over the button. Under the line that says <code class="text_code-inline">cursor: pointer; write:</code></p>
+        <code class="text_code-box">
+          /* CSS code */
+          /* crimson shadow */
+          box-shadow: 4px 4px crimson;
+        </code>
+      </div>
+      <div class="title-part">Part 4</div>
+      <div class="text_body">
+        <p>If you'd like to change the color of the shadow, go ahead and do so. You can do this by replacing the word crimson on line 29 with anything from <a href="https://www.w3schools.com/Colors/colors_names.asp">this list</a>.</p>
+        <p>For this task, changing the shadow color isn't mandatory, but changing the border thickness is. Make the border a bit thinner by editing line 7 in the style.css file.</p>
+      </div>
+      <div class="title-part">Lesson HTML Code</div>
+      <div><a href="0-0_YourFirstCode_code/0-0_YourFirstCode_code-Lesson3_html.txt" target="_blank">HERE</a></div>
+      <div class="title-part">Lesson CSS Code</div>
+      <div><a href="0-0_YourFirstCode_code/0-0_YourFirstCode_code-Lesson3_css.txt" target="_blank">HERE</a></div>
+    </div>
+    <div class="topic_card">
+      <div class="title-lesson">JavaScript</div>
+      <div class="text_body">
+        <p>You‘ve made the button look better than ever with CSS, but it still doesn't do anything. To turn your Like button into one that functions, you'll need to use <b>Javascript</b>. This is the language that brings page elements to life by making them interactive.</p>
+        <p>JavaScript code is often referred to simply as script, and script is what dictates how the browser works. Once the code starts running, the browser will perform every action that has been written in its script.</p>
+        <p>Take a look at line 13 in <i>index.html</i> and you will see that the <i>script.js</i> file is now linked to the page. Most of the code has already been written. All that's left is the fun part, which is to make your button clickable.</p>
+      </div>
+      <div class="title-part">Part 1</div>
+      <div class="text_body">
+        <p>The first step is to open the script.js file, which contains the script that controls the button.</p>
+        <p>The comments should make it easier for you to understand what’s going on in the code. What this is saying is that when someone clicks on the button, the script then finds the button and marks it as clicked.</p>
+        <p>ow let's get back to the button’s appearance. The script will add a <code class="text_code-inline">clicked</code> state to the button once it’s been clicked. However, this state does not yet have a style assigned to it. The clicked state should have a distinct style so that the button's appearance changes when someone clicks on it. That way, the user will know that the button works.</p>
+        <p>Let's make the clicked button black with white text. Do this by adding the following code in the last line of the style.css file, below the final closing brace <code class="text_code-inline">}</code>:</p>
+        <code class="text_code-box">
+          /* CSS */
+          .clicked {
+            /* background-color */
+            background-color: black;
+            /* color—for text color */
+            color: white;
+          }
+        </code>
+      </div>
+      <div class="title-part">Part 2</div>
+      <div class="text_body">
+        <p>Now your button works, but you can’t undo the like. Once the button has been clicked, it stays clicked forever and ever. Let’s give our users the ability to change their minds.</p>
+        <p>For this, you need to instruct the browser how to respond when a user clicks the button for the second time. The browser should remove the <code class="text_code-inline">clicked</code> state from the button and change the <code class="text_code-inline">isClicked</code> value to <code class="text_code-inline">false</code>. In order to do so, add the following code to line 10 in the <i>script.js</i> file:</p>
+        <code class="text_code-box">
+          //JavaScript
+          button.classList = '';
+          isClicked = false;
+        </code>
+      </div>
+      <div class="title-part">Lesson HTML Code <a href="0-0_YourFirstCode_code/0-0_YourFIrstCode_code-Lesson4_html.txt" target="_blank">HERE</a></div>
+      <div class="title-part">Lesson CSS Code <a href="0-0_YourFirstCode_code/0-0_YourFIrstCode_code-Lesson4_css.txt" target="_blank">HERE</a></div>
+      <div class="title-part">Lesson JavaScript Code <a href="0-0_YourFirstCode_code/0-0_YourFirstCode_code-Lesson4_js.txt" target="_blank">HERE</a></div>
+    </div>
+    <div class="title-lesson">P.S.</div>
+    <div class="text_body">
+      <p>Now that the button works, the app is running smoothly again, Dylan and Anissa are super happy.</p>
+      <p>But <b>JavaScript</b> isn't just for controlling buttons, pop-up windows, and menu clicks. It can be used to do virtually anything.</p>
+    </div>
+    <div>Go to <a href="#" target="_blank">Introduction to HTML and CSS</a></div>
+
+
+  <!--ending div-->
+  </div>
+
+
+    <!--
+    <div>
+      <h3 class="title-section">SECTION TITLE</h1>
+    </div>
+    <div>
+      <h4 class="title-part">PART TITLE</h4>
+    </div>
+    <div>
+      <p class="text_body">text text text</p>
+    </div>
+    <div>
+      <div class="text_code-box">
+      <code>height: 200px;</code>
+      </div>
+    </div>
+    <div>
+      <code class="text_code-inline">weight: bold;</code>
+    </div>
+    <div>
+      <code class="text_code-inline-comment">these are code notes</code>
+
+     <div class="title-part">Lesson HTML Code</div>
+     <div><p>View code <a href="#">HERE</a>.</p></div>
+     <div class="title-part">Lesson CSS Code</div>
+     <div><p>View code <a href="#">HERE</a>.</p></div>
+    -->
+</body>
+</html>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,3 +11,17 @@
   <button>Like</button>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Temporary Like Button</title>
+  <!-- link to the file with styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button>Like</button>
+</body>
+</html>
+>>>>>>> Cleaned up file structure

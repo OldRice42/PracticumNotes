@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 div {
   border: 1px solid red;
 }
@@ -32,4 +33,40 @@ div {
 
 .project_design-principles {
   background: url(https://code.s3.yandex.net/web-code/design.png)
+=======
+div {
+  border: 1px solid red;
+}
+
+.header {
+  height: 95px;
+  display: flex;
+}
+
+.header-link {
+  margin: auto;
+}
+
+.flex-row {
+  display: flex;
+  
+}
+
+.project {
+  background-position: center;
+  background-size: cover;
+}
+
+.project_beginner {
+  width: 636px;
+  height: 430px;
+}
+
+.project_music-album {
+  background: url(https://code.s3.yandex.net/web-code/album.png)
+}
+
+.project_design-principles {
+  background: url(https://code.s3.yandex.net/web-code/design.png)
+>>>>>>> Cleaned up file structure
 }

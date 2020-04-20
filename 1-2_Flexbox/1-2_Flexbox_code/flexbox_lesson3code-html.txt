@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,3 +17,23 @@
   </div>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://code.s3.yandex.net/web-code/normalize.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Your Portfolio</title>
+</head>
+<body>
+  <div class="flex-row">
+    <div class="project project_beginner project_music-album"></div>
+    <div class="project project_beginner project_design-principles"></div>
+  </div>
+  <div class="header">
+    <a href="#" class="header-link">Practicum by Yandex</a>
+  </div>
+</body>
+</html>
+>>>>>>> Cleaned up file structure

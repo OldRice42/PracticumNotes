@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -81,4 +82,89 @@
 
   </div>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- The main title-->
+  <title>PRACTICUM NOTES - Flexbox</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+     <h1>PRACTICUM</h1>
+     <a href="practicumnotes-toc.html">Back to Table of Contents</a>
+    <div>
+      <h2>Flexbox</h2>
+    </div>
+    <div><title class="subtitle">Intro to Flexbox</title></div>
+    <div>
+      <p>Layout tools were originally developed for books and magazines, where the pages have fixed dimensions and structure. The primary purpose of layout tools is to ensure that all the elements on the page fit nicely together. In the case of print media, this mostly involves making sure that the text wraps around the images on the page.</p>
+      <p>This logic was carried over to webpage design, giving birth to the idea of floats. However, when developers started using floats to create websites, they ran into some problems. Changing a webpage's dimensions resulted in blocks getting moved around and text being cut off in places.</p>
+      <p>In trying to come up with a workaround for this issue, they started changing the behavior of inline elements, assigning them the display: inline-block; property in order to make them look like blocks. However, since they only looked like blocks, this created the new problem of gaps between them. This, in turn, required another workaround.</p>
+      <p>Eventually, there were so many workarounds, and layout tools had become so cumbersome that it became necessary to develop a completely new tool that would address all these complications. This is how the flexible box module, better known as flexbox, came about. It was created to make the process of arranging and aligning elements quick and easy.</p>
+      <p>In this chapter, you'll study flexbox and create a website portfolio of projects that you've already completed or will complete in the future. You'll learn how to build complex grids like those on YouTube or Facebook and end up with a portfolio that you can show to potential employers and brag about to your friends.</p>
+    </div>
+    <div>
+      <img src="images/flex-poject-eng_1579782296.png" alt="Portfolio example">
+    </div>
+    <div>
+      <p>Here's what your portfolio will look like.</p>
+    </div>
+    <div class="subtitle">Conversion to Flex Containers</div>
+    <div>
+      <p>Up until now, when we've written HTML code, the elements on the webpage have been displayed in the same order in which they appear in the code. This is no good if you want to make a news site or a shopping site. The most recent news items and the newest products should appear at the top of the user's feed. You also need the flexibility to change rows into columns for narrower mobile screens, as well as to align your content along the edge of the screen or in the center. Simply put, you need as much flexibility in your display as possible.</p>
+      <p>This one line of code provides the foundation for such freedom:</p>
+      <div class="codetextbox">display: flex;</div>
+      <div class="subtitle">With display: block;</div>
+      <div>
+      <img src="images/flex-display-block.png" alt="display: block;" class="imgsmall">
+      </div>
+      <div class="subtitle">With display: flex;</div>
+      <div>
+      <img src="images/flex-display-flex.png" alt="display: flex;">
+      </div>
+      <p>This property tells the browser to display the item as a flexible box, or flexbox.</p>
+      <p>If you need to refresh your memory on the <code class="codetext">display</code> property, you can go back over the lesson by clicking the link below. Having a good understanding of this property will give you more confidence going forward. You're going to be applying the <code class="codetext">display</code> property a lot in the future, so it's best you know exactly what you're doing.</p>
+      <div>
+        <a href="https://practicum.yandex.com/trainer/web/lesson/a8dcca7a-5beb-499d-a143-61ead19314ec/task/aab36bc4-6ea6-4288-a8d8-ae5fc975a23f/">See the Practicum lesson on Block + Inline here!</a>
+      </div>
+      <p>The <code class="codetext">display: flex</code> property turns elements into flex containers and their child elements into flex items. The relationship between a container and its items is much like that of a soccer coach and their team. The coach sets the team up in a certain formation and tells them how to react in different situations. The players (flex items), in turn, can show their individual brilliance by virtue of their personal characteristics (properties) to decide exactly how they carry out the coach's orders. We'll learn how this all works in practice now.</p>
+      <p>Let's start off simple. We have a container with one child item and <code class="codetext">margin: auto</code> as its only property.</p>
+      <p>The flex container doesn't govern the item itself, only the spacing around it. If we had a more specific property, such as <code class="codetext">margin-left: auto</code>, the spacing would appear on the left and the item would sit on the right-hand edge of the container.</p>
+      <p>But <code class="codetext">margin: auto</code> does something truly magical. It distributes the spacing equally around the item in all directions, putting it right in the center of its container, both in terms of width and height. This means we don't need the <code class="codetext">vertical-align</code> property. And that's just the beginning!</p>
+      <div class="subtitle">Without margin: auto;</div>
+      <div><img src="images/margin-auto_nocheck.png" alt="no margin: auto;"></div>
+      <div class="subtitle">With margin: auto;</div>
+      <div><img src="images/margin-auto_check.png" alt="With margin: auto;"></div>
+    </div>
+    <div class="subtitle">Lesson 2 Code</div>
+    <div>
+      <ul>
+        <li><a href="flexbox_lesson2code.html">Lesson 2: Conversion to Flex Containers</a></li>
+      </ul>
+    </div>
+    <div class="subtitle">Flex Containers with Multiple Items</div>
+    <div>
+      <p>When there are multiple items in a flex container, they all appear on the same line by default, regardless of type. You don't need to change the value of the <code class="codetext">display</code> property to <code class="codetext">inline-block</code> to achieve this. Since this is just one of the many possibilities provided by flexbox, they're much more widely used for organizing layouts than <code class="codetext">inline-block</code> .</p>
+    </div>
+    <div class="subtitle">Lesson 3 Code</div>
+    <div>
+      <ul>
+        <li><a href="flexbox_lesson3code.html">Lesson 3: Flex Containers with Multiple Items</a></li>
+      </ul>
+    </div>
+    <div class="subtitle">Flexbox Terminology</div>
+    <div>
+      <p>When it comes to flexbox, there are two main terms you need to know:</p>
+      ul#Flex containers (parent elements): These are flexible spaces in which items are organized according to the rules of the container.
+      ul#Flex items (child elements): These are the elements found inside the flex container. They conform to the rules of the container, as well as the rules applied to them specifically.
+    </div>
+    <div><img src="images/flexbox_flexcontainer.png"></div>
+    <div><img src="images/flexbox_flexelements.png"></div>
+
+  </div>
+</body>
+>>>>>>> Cleaned up file structure
 </html>

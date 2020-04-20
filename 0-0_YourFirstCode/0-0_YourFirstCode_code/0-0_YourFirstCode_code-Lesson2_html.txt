@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,3 +9,15 @@
   Like
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Temporary Like Button.</title>
+</head>
+<body>
+  Like
+</body>
+</html>
+>>>>>>> Cleaned up file structure

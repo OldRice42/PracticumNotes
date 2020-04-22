@@ -8,10 +8,11 @@
 </head>
 <body>
   <div class="page">
-      <div><img src="../images/practicumnoteslogo.png"></div>
-      <div class="menu">
+    <div><img src="../images/practicumnoteslogo.png"></div>
+    <a name="topofpage"></a>
+    <div class="menu">
        <a href="../practicumnotes-toc.html">Back to Table of Contents</a>
-      </div>
+    </div>
     <div class="title-course">Basics of HTML, CSS</div>
     <div class="topic_card">
       <div class="title-topic">Your First Code</div>
@@ -34,13 +35,13 @@
       <div class="title-part">Part 1</div>
       <div class="text_body">
         <p>Your very first mission, should you choose to accept it, is to make a button with the word Like. First of all, look above the task description block, where you will find a code editor window with an index.html file. All you need to do is enter a single word into the empty line 8 to get started:</p>
-        <p class="text_code-box">Like</p>
+        <div class="text_code-box">Like</div>
         <p>Once you have accomplished your mission, click the Check button and the window on the right will display the result.</p>
       </div>
       <div class="title-part">Part 2</div>
       <div>
         <p>If you want your word to be a button, you need to transform the standard text into an HTML element. Look at the line below, for example:</p>
-        <code class="text_code-box"><button>Like</button></button></code>
+        <div class="text_code-box"><code><button>Like</button></button></code></div>
         <p>It has an opening tag and a closing tag, which together create a <i>button</i> element. This particular code marks the beginning and the end of the button element on the web page. The word itself will remain inside the button.</p>
         <p>Now try turning your text into a button and then run the code. Does it work?</p>
       </div>
@@ -66,12 +67,14 @@
         <p>Now the button looks kind of old-school like it's from an old Nintendo game. This is cool, but it doesn't fit the style of our website. Our designer wants us to give it a more modern look.</p>
         <p>Here are the requirements from the designer: font <code class="text_code-inline">- Arial Narrow, size - 20px</code>.</p>
         <p>Add the following code to the empty line 19 in the <i>style.css</i> file:</p>
-        <code class="text_code-box">
-          /* CSS */
-          /* font settings */
-          font-family: 'Arial Narrow', sans-serif;
-          font-size: 20px;
-        </code>
+        <div class="text_code-box">
+          <code>
+            /* CSS */
+            /* font settings */
+            font-family: 'Arial Narrow', sans-serif;
+            font-size: 20px;
+          </code>
+        </div>
         <p>Don’t worry if the CSS code doesn’t make much sense right now. You don’t need to memorize or understand these commands. That will all come later. For now, we’re just observing how CSS behaves while solving specific tasks.</p>
       </div>
       <div class="title-part">Part 3</div>
@@ -79,11 +82,13 @@
         <p>Links and buttons typically change their appearance when the cursor is hovering over them. This is an indicator that something is going to happen when you click on it.</p>
         <p>The only visual effect our button has so far is to change the cursor from an arrow to a hand when we hover over it.</p>
         <p>Now let's make a crimson shadow for when a cursor hovers over the button. Under the line that says <code class="text_code-inline">cursor: pointer; write:</code></p>
-        <code class="text_code-box">
-          /* CSS code */
-          /* crimson shadow */
-          box-shadow: 4px 4px crimson;
-        </code>
+        <div class="text_code-box">
+          <code>
+            /* CSS code */
+            /* crimson shadow */
+            box-shadow: 4px 4px crimson;
+          </code>
+        </div>
       </div>
       <div class="title-part">Part 4</div>
       <div class="text_body">
@@ -108,7 +113,8 @@
         <p>The comments should make it easier for you to understand what’s going on in the code. What this is saying is that when someone clicks on the button, the script then finds the button and marks it as clicked.</p>
         <p>ow let's get back to the button’s appearance. The script will add a <code class="text_code-inline">clicked</code> state to the button once it’s been clicked. However, this state does not yet have a style assigned to it. The clicked state should have a distinct style so that the button's appearance changes when someone clicks on it. That way, the user will know that the button works.</p>
         <p>Let's make the clicked button black with white text. Do this by adding the following code in the last line of the style.css file, below the final closing brace <code class="text_code-inline">}</code>:</p>
-        <code class="text_code-box">
+        <div class="text_code-box">
+          <code>
           /* CSS */
           .clicked {
             /* background-color */
@@ -116,17 +122,19 @@
             /* color—for text color */
             color: white;
           }
-        </code>
+          </code>
+        </div>
       </div>
       <div class="title-part">Part 2</div>
       <div class="text_body">
         <p>Now your button works, but you can’t undo the like. Once the button has been clicked, it stays clicked forever and ever. Let’s give our users the ability to change their minds.</p>
         <p>For this, you need to instruct the browser how to respond when a user clicks the button for the second time. The browser should remove the <code class="text_code-inline">clicked</code> state from the button and change the <code class="text_code-inline">isClicked</code> value to <code class="text_code-inline">false</code>. In order to do so, add the following code to line 10 in the <i>script.js</i> file:</p>
-        <code class="text_code-box">
-          //JavaScript
-          button.classList = '';
-          isClicked = false;
-        </code>
+        <div class="text_code-box">
+          <code>
+            //JavaScript
+            button.classList = '';
+            isClicked = false;
+          </code>
       </div>
       <div class="title-part">Lesson HTML Code <a href="0-0_YourFirstCode_code/0-0_YourFIrstCode_code-Lesson4_html.txt" target="_blank">HERE</a></div>
       <div class="title-part">Lesson CSS Code <a href="0-0_YourFirstCode_code/0-0_YourFIrstCode_code-Lesson4_css.txt" target="_blank">HERE</a></div>
@@ -137,38 +145,9 @@
       <p>Now that the button works, the app is running smoothly again, Dylan and Anissa are super happy.</p>
       <p>But <b>JavaScript</b> isn't just for controlling buttons, pop-up windows, and menu clicks. It can be used to do virtually anything.</p>
     </div>
-    <div>Go to <a href="#" target="_blank">Introduction to HTML and CSS</a></div>
-
-
-  <!--ending div-->
+    <div>
+      <a href="#topofpage">Top of Page</a> * Next Lesson: <a href="../1-1_YourVeryFirstSprint/1-1_YourVeryFirstSprint.html">Introduction to HTML and CSS</a>
+    </div>
   </div>
-
-
-    <!--
-    <div>
-      <h3 class="title-section">SECTION TITLE</h1>
-    </div>
-    <div>
-      <h4 class="title-part">PART TITLE</h4>
-    </div>
-    <div>
-      <p class="text_body">text text text</p>
-    </div>
-    <div>
-      <div class="text_code-box">
-      <code>height: 200px;</code>
-      </div>
-    </div>
-    <div>
-      <code class="text_code-inline">weight: bold;</code>
-    </div>
-    <div>
-      <code class="text_code-inline-comment">these are code notes</code>
-
-     <div class="title-part">Lesson HTML Code</div>
-     <div><p>View code <a href="#">HERE</a>.</p></div>
-     <div class="title-part">Lesson CSS Code</div>
-     <div><p>View code <a href="#">HERE</a>.</p></div>
-    -->
 </body>
 </html>

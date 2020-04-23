@@ -3,7 +3,7 @@ body {
 }
 
 div {
-  border: 0px crimson solid;
+  border: 0px solid crimson;
   margin-top: 10px;
 }
 
@@ -52,19 +52,21 @@ p {
 }
 */
 a:link {
-  color: paleturquoise;
+  color: lightcoral;
 }
 
 a:visited {
-  color: lightcyan;
+  color: crimson;
+  font-style: italic;
 }
 
 a:hover {
-  color: plum;
+  color: lightseagreen;
+  font-style: italic;
 }
 
 a:active {
-  color: lemonchiffon;
+  color: turquoise;
 }
 
 .image_flex-small {
@@ -110,6 +112,7 @@ a:active {
   color: lightcoral;
   font-size: 20px;
   font-weight: bold;
+  margin: 10px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -118,6 +121,7 @@ a:active {
   font-size: 18px;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
+  margin: 10px;
   margin-top: 10px;
 }
 
@@ -127,12 +131,14 @@ a:active {
   font-weight: bold;
   font-style: italic;
   font-family: Arial, Helvetica, sans-serif;
+  margin: 10px;
 }
 
 .text_body {
   color: #bbc5c7;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
+  margin: 5px;
 }
 
 .text_code-box {

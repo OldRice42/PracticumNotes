@@ -3,7 +3,7 @@ body {
 }
 
 div {
-  border: 0px crimson solid;
+  border: 0px solid crimson;
   margin-top: 10px;
 }
 
@@ -17,9 +17,10 @@ p {
   background-color: #1c142b;
   color: #bbc5c7;
   font-family: Arial, Helvetica, sans-serif;
-  padding: 50px 0;
+  padding: 20px 0;
 }
 
+/*
 .subtitle {
   color: #69d8d8;
   font-size: 20px;
@@ -49,33 +50,35 @@ p {
   font-weight: bold;
   font-family: 'Courier New', Courier, monospace;
 }
-
+*/
 a:link {
-  color: paleturquoise;
+  color: lightcoral;
 }
 
 a:visited {
-  color: lightcyan;
+  color: crimson;
+  font-style: italic;
 }
 
 a:hover {
-  color: plum;
+  color: lightseagreen;
+  font-style: italic;
 }
 
 a:active {
-  color: lemonchiffon;
+  color: turquoise;
 }
 
-.imgsmall {
-  height: 200 px;
+.image_flex-small {
+  max-width: 50%;
 }
 
-.imgmed {
-  height: 150px;
+.image_flex-medium {
+  max-width: 75%;
 }
 
-.imglarge {
-  height: 200px;
+.image_flex-large {
+  max-width: 100%;
 }
 
 .imgxl {
@@ -109,6 +112,7 @@ a:active {
   color: lightcoral;
   font-size: 20px;
   font-weight: bold;
+  margin: 10px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -117,6 +121,7 @@ a:active {
   font-size: 18px;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
+  margin: 10px;
   margin-top: 10px;
 }
 
@@ -126,15 +131,18 @@ a:active {
   font-weight: bold;
   font-style: italic;
   font-family: Arial, Helvetica, sans-serif;
+  margin: 10px;
 }
 
 .text_body {
   color: #bbc5c7;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
+  margin: 5px;
 }
 
 .text_code-box {
+/*
   color: #ce0145;
   font-family: 'Courier New', Courier, monospace;
   background-color: #f5f5dc;
@@ -145,10 +153,19 @@ a:active {
   padding-top: 10px;
   padding-bottom: 10px;
   font-weight: bold;
+*/
+  color: #ce0145;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #f5f5dc;
+  max-width: 75%;
+  border: 2px solid silver;
+  padding: 10px;
+  margin: 20px;
+  font-weight: bold;
 }
 
 .text_code-inline {
-  color: #ce0145;
+  color: lightcoral;
   font-weight: bold;
   font-family: 'Courier New', Courier, monospace;
 }

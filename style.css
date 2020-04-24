@@ -156,7 +156,7 @@ a:active {
 */
   color: crimson;
   font-family: 'Courier New', Courier, monospace;
-  background-color: lemonchiffon;
+  background-color: cornsilk;
   max-width: 50%;
   border: 2px solid azure;
   padding: 10px;
@@ -180,7 +180,7 @@ a:active {
   border: 0px crimson solid;
 }
 
-/*sample cards*/
+/*sample colors*/
 
 .sample_gloom {
   color: #1c142b;
@@ -210,7 +210,7 @@ a:active {
 }
 
 .sample_limonchiffon {
-    color: lemonchiffon;
+    color: cornsilk;
   font-size: 24px;
   font-weight: bold;
   margin: 10px;

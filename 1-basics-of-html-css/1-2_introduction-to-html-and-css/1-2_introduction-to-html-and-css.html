@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- The main title-->
+  <title>PRACTICUM NOTES - Basics of HTML and CSS</title>
+  <link rel="icon" href="../../images/practicumnoteslogosmall.png">
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+  <div class="page">
+    <!--Start of page-->
+    <a name="topofpage"></a>
+    <div><img src="../../images/practicumnoteslogo.png"></div>
+    <div class="menu">
+      <!--Back to previous lesson link
+      <a href=#></a>-->
+      <a href="../../practicumnotes-toc.html">Back to Table of Contents</a>
+      <!--Forward to next Lesson link
+      <a haref="#"></a>-->
+    </div>
+    <div>
+      <div class="title-topic">HTML Tags</div>
+      <div class="text_body">
+        <p>>Now let's sink our teeth into HTML. This language provides the basic framework of a website. HTML stands for HyperText Markup Language.</p>
+        <p>When you add content to a page — such as a text, image, or video — it has to be placed inside tags. These tags tell the browser how to display content on a webpage.</p>
+        <div><img src="../../images/1-2_a.png" class="image_flex-medium"></div>
+        <p>A typical HTML element is comprised of the content and the enclosing tags. Each HTML tag has its own name, which is surrounded by angle brackets. For example, the tag for main headings is called h1 (heading 1, i.e. “first level heading”).</p>
+        <p>Tags in a code are like road signs. When you're entering a city, for example, you'll see a sign that reads "Welcome to San Francisco", and as you're leaving the city limits you'll drive past a sign that says "You are now leaving San Francisco". Much like road signs that have a city's name on it, both the opening and closing tags will contain the name of that tag. The resulting element is typically referred to by the name of its tag.
+        </p>
+        <div class="title-part">Click <a href="https://practicum.yandex.com/trainer/web/lesson/89dfe821-cfad-4cdd-84c6-44f48a2f3b5e/task/08f6d4de-5eea-4663-8091-2e721f8760da/" target="_blank">HERE</a> for the lesson.</div>
+      </div>
+    </div>
+    <div>
+      <div class="title-topic">Headings</div>
+      <p>There are six different sizes for headings in HTML: h1, h2, h3, h4, h5, and h6. The concept of heading sizes comes from books, which have the main heading on the title page (h1), chapter headings (h2), section titles (h3), and smaller segments (h4, h5, h6).</p>
+      <p>As the biggest of the bunch, h1 is used for the most significant title, while h6 represents the least important and is even smaller in stature than standard text. We sort headings according to their relevance, and this pecking order makes it easier for search engines to decipher websites. Moreover, readers usually find it easier to understand webpages arranged in such a manner.</p>
+      <p>n general, h1 is used all the time. You can think of it as the headliner at a music festival, with h2 and h3 the supporting acts. Then you have h4 and h5, who play on the smaller stages, while h6 is that band you've never heard of.</p>
+      <div class="title-part">Click <a href="https://practicum.yandex.com/trainer/web/lesson/bfb56faa-4bed-46cb-8a4b-78ca2f197340/task/347eb1b5-e94e-4cff-b60d-da8d5147ada4/" target="_blank">HERE</a> for the lesson.</div>
+    </div>
+    <div>
+      <div class="text-topic">Paragraphs</div>
+      <div class="text_body">
+        <p>The vast majority of text on the internet is comprised of paragraphs. Those paragraphs are wrapped in special <code class="text_code-inline">< p >  < / p ></code> tags (short for “paragraph”).</p>
+        <p>Here's an example that HTML creator Tim Berners-Lee selected for his first developer's manual:</p>
+        <div"><img src="../../images/1-2_b.png" class="image_flex-medium"></div>
+      </div>
+      <div class="title-topic">Click <a href="https://practicum.yandex.com/trainer/web/lesson/70b48fe1-cb21-4f4d-96af-6a66029287aa/task/eb59851b-299f-4fba-bf64-b77d949fbfa8/" target="_blank">HERE</a> for the lesson.</div>
+    </div>
+    <div>
+      <div class="title-topic">Links</div>
+      <div class="text_body">
+        <p>The World Wide Web, along with web development as a career, exists due to this very essential element. The name of the tag <code class="text_code-inline">< a > < / a ></code> used to create this element is derived from the word anchor. Imagine an anchor being dropped onto some text on your webpage, which links it to a specific address. This is essentially how the Internet works.</p>
+        <p><a href="https://code.s3.yandex.net/frontend-developer/landings/puppy-en/index.html" target="_blank">Links</a> that take you from one place to another are usually embedded in a part of the webpage's text. You click on the text, not the address itself, to go to the website. So where is the link's address hidden?</p>
+        <p><b>Attributes</b> (Latin for “characteristics”) are used to add extra information to tags. The website link is put in the href attribute (short for hypertext reference). Here's what it looks like in code:</p>
+        <div><img src="../../images/1-2_c.PNG" class="image_flex-small"></div>
+        <div class="title-part">Click <a href="https://practicum.yandex.com/trainer/web/lesson/984ec6da-05e7-4da3-ae87-220fd96e4ce4/task/ce03e248-f8fa-4445-bfaf-465307085e9c/" target="_blank">HERE</a> for the lesson.</div>
+      </div>
+    </div>
+    <div>
+      <div class="title-topic">Attributes</div>
+      <div class="text_body">
+        <p><b>Attributes</b> can provide additional information about an element, with different attributes being used for different types of information.</p>
+        <p>An attribute’s name tells the browser which property to apply, while its value contains the specific details of said property. For example, the value of the href attribute is the address of the resource that it should take us to:</p>
+        <img src="../../images/1-2_d.png" class="image_flex-small">
+        <p>An attribute must be put inside the opening tag. The value of an attribute can be put either in single <code class="text_code-inline">href='http://info.cern.ch'</code> or double <code class="text_code-inline">href="http://info.cern.ch"</code> quotation marks. Either is fine, just make sure that you use the same type of quotation mark consistently to make your code more readable.</p>
+        <p>For the <code class="text_code-inline">< a ></code> tag, href is a required attribute, and a link will not function without it. We can also add optional attributes if we want to, such as the target attribute, which tells the browser how to open a link. For instance, it can be opened in the same tab or a brand new one.</p>
+        <p>Since a link will work without it, using the <i>target</i> attribute is optional. However, if a link takes us to another website, it’s better to open it in a new tab. This way, your page will stay open in the user’s browser, and you won’t lose traffic.</p>
+        <p>When there are multiple attributes in the opening tag of your element, you should separate them using the space bar. The order in which they appear doesn’t matter.</p>
+        <div><img src="../../images/1-2_e.PNG" class="image_flex-medium"></div>
+        <div class="title-part">Click <a href="https://practicum.yandex.com/trainer/web/lesson/c3a90c75-8f39-4f3e-8c0f-35eb7c4869cd/task/51fb5d84-4d0b-4220-9671-5b6cc4bdca46/" target="_blank">HERE</a> for the lesson.</div>
+      </div>
+    </div>
+    <div>
+      <div class="title-topic">One Tag Inside Another: The Parent-Child Relationship</div>
+      <div>
+        <p>In our previous lesson we learned how to put a link inside a paragraph:</p>
+        <div><img src="../../images/1-2_f.png" class="image_flex_small"></div>
+      </div>
+    </div>
+    <!--End of page-->
+  </div>
+</body>
+</html>

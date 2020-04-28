@@ -3,21 +3,25 @@ body {
 }
 
 div {
-  border: 0px solid crimson;
+  border: 1px solid crimson;
   margin-top: 10px;
 }
 
 p {
-  color: #bbc5c7;
+  color: azure;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
 }
 
 .page {
   background-color: #1c142b;
-  color: #bbc5c7;
+  color: azure;
   font-family: Arial, Helvetica, sans-serif;
   padding: 20px 0;
+}
+
+.logo {
+  width: 30%
 }
 
 /*
@@ -61,12 +65,12 @@ a:visited {
 }
 
 a:hover {
-  color: lightseagreen;
+  color: aqua;
   font-style: italic;
 }
 
 a:active {
-  color: turquoise;
+  color: aqua;
 }
 
 .image_flex-small {
@@ -86,21 +90,21 @@ a:active {
 }
 
 .menu {
-  color: #69d8d8;
+  color: aqua;
   font-size: 15px;
   margin: 10px;
 }
 
 .title-course {
-  color: #69d8d8;
-  font-size: 24px;
+  color: aqua;
+  font-size: 28px;
   font-weight: bold;
   margin: 10px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .title-sprint {
-  color: #69d8d8;
+  color: lightcoral;
   font-size: 24px;
   font-weight: bold;
   font-style: italic;
@@ -117,7 +121,7 @@ a:active {
 }
 
 .title-lesson {
-  color: #69d8d8;
+  color: aqua;
   font-size: 18px;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
@@ -126,7 +130,7 @@ a:active {
 }
 
 .title-part {
-  color: #69d8d8;
+  color: aqua;
   font-size: 15px;
   font-weight: bold;
   font-style: italic;
@@ -135,7 +139,7 @@ a:active {
 }
 
 .text_body {
-  color: #bbc5c7;
+  color: azure;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
   margin: 5px;
@@ -154,11 +158,11 @@ a:active {
   padding-bottom: 10px;
   font-weight: bold;
 */
-  color: #ce0145;
+  color: crimson;
   font-family: 'Courier New', Courier, monospace;
-  background-color: #f5f5dc;
-  max-width: 75%;
-  border: 2px solid silver;
+  background-color: cornsilk;
+  max-width: 50%;
+  border: 2px solid azure;
   padding: 10px;
   margin: 20px;
   font-weight: bold;
@@ -171,11 +175,65 @@ a:active {
 }
 
 .text_code-inline-comment {
-  color: #b68495;
+  color: lightcoral;
   font-weight: bold;
+  font-style: italic;
   font-family: 'Courier New', Courier, monospace;
 }
 
 .topic_card {
-  border: 0px violet solid;
+  border: 0px crimson solid;
+}
+
+/*sample colors*/
+
+.sample_gloom {
+  color: #1c142b;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  border: 1px solid black;
+  width: 50%
+}
+
+.sample_crimson {
+    color: crimson;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sample_lightcoral {
+    color: lightcoral;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sample_cornsilk {
+    color: cornsilk;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sample_aqua {
+    color: aqua;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sample_azure {
+    color: azure;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px;
+  font-family: Arial, Helvetica, sans-serif;
 }

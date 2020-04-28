@@ -177,6 +177,7 @@ a:active {
 .text_code-inline-comment {
   color: lightcoral;
   font-weight: bold;
+  font-style: italic;
   font-family: 'Courier New', Courier, monospace;
 }
 

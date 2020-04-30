@@ -3,22 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <!-- The main title-->
-  <title>PRACTICUM NOTES - CSS Sample Sheet</title>
+  <title>PRACTICUM NOTES - Positioning Elements</title>
   <link rel="stylesheet" href="../../style.css">
 </head>
 <body>
   <div class="page">
     <!--Start of page-->
-    <div><img src="../../images/practicumnoteslogo.png"></div>
+    <div><img src="../../images/practicumnoteslogo.png" class="logo"></div>
     <div class="menu">
       <!--Back to previous lesson link
       <a href=#></a>-->
-      <a href="practicumnotes-toc.html">Back to Table of Contents</a>
+      <a href="../../practicumnotes-toc.html">Back to Table of Contents</a>
       <!--Forward to next Lesson link
       <a haref="#"></a>-->
     </div>
+    <div class="title-topic">Introduction to Positioning Elements</div>
     <div>
-
+      <div class="text_body">
+        <p>Awesome! You’ve learned how to build grid layouts, mastered the BEM methodology, semantics and hover effects. You can now create websites that are easy to both use and maintain. Yet, sometimes it comes down to dealing with more complex design that has elements positioned differently. For example, elements may overlap one another or have fixed positioning relative to the page.</p>
+        <p>It takes special tricks to make something like that using flexbox, and this is when the position property comes to the rescue.</p>
+        <p>All elements on the page are interconnected and react to changes happening to the surrounding elements by default. Such behavior may be hindering. Controlling positioning of interconnected elements in the flow can help with that. There're several types of positioning. Later we’ll explain how all of these types work.</p>
+        <p>You’ll learn how to position elements on a page anywhere you want, create fixed menus, center popup windows on the screen and use hover effects that work even with videos.</p>
+      </div>
+    </div>
+    <div>
+      <div class="title-topic">Flow and Static Positioning</div>
+      <div class="text_body">
+        <p>Browsers organize elements given to them in HTML code according to an internal set of rules. Every block is placed on a new line, while inline elements are grouped together. Objects don't overlap one another, meaning that if you apply a margin to one, the surrounding elements will be pushed away accordingly. This means that all the elements on our page are interconnected. It's like a room full of people who can all see each other, and react to each other's actions.</p>
+        <p>This connection between elements and their dependency on one another is referred to as flow. By default, all elements on a page are part of the flow.</p>
+        <p>The way in which elements are arranged in a layout is referred to as positioning. The CSS position property tells the browser where to place elements in the flow.</p>
+        <p>Static positioning is applied to pages by default, as described by the following property:</p>
+        <div class="text_code-box">position: static;</div>
+        <p>This means that each element:</p>
+        <ol>
+          <li>is part of the flow, so all other elements know where it is and react when it's repositioned;</li>
+          <li>only repositions itself visually when the margins are changed. From the browser's point of view, we don't actually move anything. Every block maintains its position in the flow, but we can change its size by modifying the margins.</li>
+        </ol>
+      </div>
+      <div class="title-lesson">Click <a href="https://practicum.yandex.com/trainer/web/lesson/81108f89-6fc4-4f58-b297-85e5716b7aed/task/e2c40a5c-7197-48f5-91f0-883fda484c89/">HERE</a> to view the lesson workshop</div>
+    </div>
+    <div>
+      <div class="title-topic">Realative Positioning</div>
+      <div class="text_body">
+        <p>When an element's position in the flow is adjusted relative to its normal position, it's said to have relative positioning. It has the <code class="text_code-inline">position: relative</code> declaration.</p>
+      </div>
     </div>
     <!--End of page-->
   </div>

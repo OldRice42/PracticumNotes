@@ -5,6 +5,7 @@ body {
 div {
   border: 0px solid crimson;
   margin-top: 10px;
+  max-width: 80%
 }
 
 p {
@@ -166,7 +167,7 @@ a:active {
 
 .text_code-inline {
   color: lightcoral;
-  font-weight: bold;
+  /*font-weight: bold;*/
   font-family: 'Courier New', Courier, monospace;
 }
 

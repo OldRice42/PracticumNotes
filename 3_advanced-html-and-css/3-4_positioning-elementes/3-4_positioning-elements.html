@@ -40,12 +40,58 @@
           <li>only repositions itself visually when the margins are changed. From the browser's point of view, we don't actually move anything. Every block maintains its position in the flow, but we can change its size by modifying the margins.</li>
         </ol>
       </div>
-      <div class="title-lesson">Click <a href="https://practicum.yandex.com/trainer/web/lesson/81108f89-6fc4-4f58-b297-85e5716b7aed/task/e2c40a5c-7197-48f5-91f0-883fda484c89/">HERE</a> to view the lesson workshop</div>
+      <div class="title-lesson">Click <a href="https://practicum.yandex.com/trainer/web/lesson/81108f89-6fc4-4f58-b297-85e5716b7aed/task/e2c40a5c-7197-48f5-91f0-883fda484c89/">HERE</a> to view the lesson worksheet.</div>
     </div>
     <div>
       <div class="title-topic">Realative Positioning</div>
       <div class="text_body">
         <p>When an element's position in the flow is adjusted relative to its normal position, it's said to have relative positioning. It has the <code class="text_code-inline">position: relative</code> declaration.</p>
+        <p>Here are some key things to remember about this type of positioning:</p>
+        <ol>
+          <li>Because an element stays in the flow, other elements still recognize its borders;</li>
+          <li>The element doesn't move relative to its neighbors the way it would with static positioning, moving instead in relation to its own initial position as follows:</li>
+        </ol>
+        <ul>
+          <li><b>top:</b> from the top border of the block;</li>
+          <li><b>right:</b> from the right-hand border;</li>
+          <li><b>bottom:</b> from the lower border;</li>
+          <li><b>left:</b> from the left-hand border.</li>
+        </ul>
+        <div><img src="../../images/3-4_a.png" class="image_flex-small"></div>
+        <p>Only the element itself moves, while the area assigned to it in the flow stays where it is:</p>
+        <div><img src="../../images/3-4_b.png" class="image_flex-large"></div>
+      </div>
+      <div class="title-part">Click <a href="https://practicum.yandex.com/trainer/web/lesson/ab3c76cf-7798-48e3-a292-5848203c3a3e/task/fb456731-8777-4d84-ae1b-2a9318a5a8d5/">HERE</a> to view the lesson worksheet.</div>
+    </div>
+    <div>
+      <div class="title-topic">Fixed Positioning</div>
+      <div class="text_body">
+        <p>Another type of positioning is called fixed positioning, which is applied with the <code class="text_code-inline">position: fixed</code> declaration.</p>
+        <p>What sets <b>fixed positioning</b> apart from the others is that it pulls elements out of the flow. This also means that the space they occupied will be filled by its neighbors, while the fixed element will cover other elements by sitting on top of them.
+        </p>
+        <p>This element is fixed relative to the browser window:</p>
+        <div><img src="../../images/3-4_c.png" class=image_flex-small"></div>
+        <p>This code will place the element in the upper left-hand corner of the window, 10px below the top border and 40px to the right of the left-hand border. When a user scrolls down, the block maintains its position on the user's screen rather than on the webpage. Think of it like a boat anchored in the middle of a river. The river flows, but the boat stays in the same place.</p>
+        <div>
+          <video loop="" playsinline="" data-video="0" width="500" controls>
+            <source src="https://code.s3.yandex.net/web-developer/learning-materials/Positioning-1.4-3-01.mp4" type="video/mp4">
+          </video>
+        </div>
+        <p>The browser will check the upper left corner first, so properties must always be written in the following order:</p>
+        <div><img src="../../images/3-4_d.png" class="image_flex-small"></div>
+        <p>Note that if you don’t include any positioning instructions for blocks removed from the flow, it may result in them being pushed beyond the edge of the screen. As such, always be sure to set the position of elements not included in the flow.
+        </p>
+      </div>
+      <div class="title-part">Click <a href="https://practicum.yandex.com/trainer/web/lesson/6acaf93f-50a0-4524-ac37-fef4ef881446/task/8e97006c-9778-454a-9fb2-b90eada3be0b/" target="_blank">HERE</a> to view the lesson worksheet.</div>
+    </div>
+    <div>
+      <div class="title-topic"></div>
+      <div class="text_body">
+        <p>The last kind of positioning we're going to learn about is called absolute positioning. It’s one of the most common out there, and it's applied using the <code class="text_code-inline">position: absolute</code> declaration.</p>
+        <p>The first thing you need to know is that elements with absolute positioning are also pulled out of the flow, with the space they leave behind filled by the adjacent elements.</p>
+        <p>In contrast to fixed positioning, however, elements can behave differently depending on the situation.</p>
+        <p><b>The first case</b> is when the parent element doesn't have any specific positioning (i.e. it has the default property <code class="text_code-inline">position: static</code>). In such cases, our block will go to the next parent in the hierarchy and try to position itself relative to its borders.</p>
+        <p>If all the parent elements have default positioning, it will position itself relative to the borders of the whole body element. In other words, if our element can't find anything to latch onto, the following piece of code will place the block 30px below the upper border of the body and 40px to the right of its left-hand border:</p>
       </div>
     </div>
     <!--End of page-->

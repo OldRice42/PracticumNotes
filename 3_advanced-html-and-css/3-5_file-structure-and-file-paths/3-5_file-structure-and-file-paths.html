@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <!-- The main title-->
-  <title>PRACTICUM NOTES - CSS Sample Sheet</title>
+  <title>PRACTICUM NOTES - File Structure and File Paths</title>
   <link rel="stylesheet" href="../../style.css">
 </head>
 <body>
@@ -17,9 +17,73 @@
       <!--Forward to next Lesson link
       <a haref="#"></a>-->
     </div>
+    <div class="title-course">3-5: File Structure and File Paths</div>
     <div>
-
+      <div class="title-topic">Intro to File Structure and File Paths</div>
+      <div class="text_body">
+        <p>Web development involves creating a whole bunch of .html, .css, and .js files, as well as using images, font files, and videos. When you start working on big projects, the number of files and folders you'll have to work with will be astronomical. In this chapter, we'll explore how you can organize your files in such a way that everything is easy to navigate.</p>
+        <p>Whenever you have a large amount of information, it needs to be arranged systematically. For example, a clinic needs to keep medical records on all of its patients. This is usually done with filing cabinets, which are arranged alphabetically.</p>
+        <p>As such, when we need to take a look at a certain patient's records, the filing cabinet system allows us to quickly access whichever file we need simply by searching for the patient's surname.</p>
+        <p>Information can be organized on computers according to similar principles. Files are stored in folders, which in turn are kept in other folders. This needs to be done in a way that makes it easy to find whatever you're looking for, while also establishing links between certain files. For example, each webpage on your site will have both a markup file and a stylesheet, so you need to make it clear which .html file goes with which .css file.</p>
+        <p>Over the next few lessons, we're going to look at what files are made up of and typical ways of structuring them. Once we've covered the groundwork, we'll apply this logic to our project by linking the various files to each other. Don't worry, this isn't as complicated as it may seem.</p>
+      </div>
     </div>
+      <div>
+        <div class="title-topic">Files</div>
+        <div class="text_body">
+          <p>In the interactive platform, your code is divided up into HTML, CSS, and JavaScript tabs. We've made this setup as simple as possible so that you don't have to waste time looking for the right file when what you really need is to focus on coding. In real-world projects, however, developers have to decide for themselves where to put style.css and where to put index.html. Learning how to organize your front-end files will help with this.</p>
+          <p>First of all, let's take a closer look at what a file actually is. A file is a collection of data that can be written, edited, or read by a user or program. They take up a certain amount of space on the device where they're stored, such as on a computer's hard drive.</p>
+          <p>Just like with people, every file has a name. Operating systems (OS) can identify files according to how they are called, although sometimes several files can share the same name.</p>
+          <p>Files also usually have surnames, called extensions. These are used to help the OS decide what to do with a file when it's opened by the user. For example, our project's markup is stored in .html files, our styles are kept in .css files, and scripts are saved as .js files. The system tends to open .html files in a browser, while .css and .js files are opened in text editors.</p>
+          <p>Sticking to our analogy of files and people, a file's attribute can be thought of as a person's occupation. Attributes simply refer to certain properties that can be assigned to files. The list of available attributes depends on the OS.</p>
+          <div><img src="#" class=image_flex-medium"></div>
+          <p>Image note: You can access a file's properties (attributes) from the menu that appears when you right-click on it</p>
+          <p>Attributes come in all shapes and sizes. For example, the "readonly" attribute prevents users from writing or editing a file. This can cause complications, as you won't be able to edit files with the "readonly" attribute on a remote server without taking additional action. Users won't even see files that have the "hidden" attribute.</p>
+          <p>Files can be divided into two categories:</p>
+          <ul>
+            <li><b>Data files</b>: These are what web developers work with. They include graphic and text files, database files, and scenario files (scripts).</li>
+            <li><b>Program files</b>: These have the extension of the current OS. They perform system functions. For example, files with the .lnk extension are shortcuts or links on Windows systems.</li>
+          </ul>
+          <p>A directory, or catalog, is where other directories and files are stored. Each project you work on will usually be stored in its own directory.</p>
+          <p>Now that you know the terminology, let's move on to creating structures for files and directories.</p>
+          <!--<div class="title-lesson">Click <a href="" target="_blank">HERE</a> for the lesson workpage</div>-->
+        </div>
+      </div>
+      <div>
+        <div class="title-topic">Linear and Hierarchical Structures - Separating Files by Type</div>
+        <div class="text-body">
+          <p>A file structure is simply a way of organizing files with directories.
+          </p>
+          <p>A simple file structure is linear, meaning that all the files are on the same level and there aren't any directories nested inside the parent directory.
+          </p>
+          <div><img src="#" target="_blank"></div>
+          <p>Such a simple file structure has its disadvantages. If your project has a large number of .html, .css, and .js files, along with a bunch of images, it can turn into an unnavigable mess. It could take you a while to find the file you need, whereas a developer's best friend is speed.</p>
+          <p>It's better to separate your files into different folders by giving images, fonts, stylesheets, and scripts each their own directory, which makes everything easier to find. A file structure with nested directories is called a hierarchical structure.</p>
+          <p>A hierarchical file structure is one that contains both files and nested subdirectories.</p>
+          <div><img src="#" target="_blank"></div>
+          <p>Web developers often structure their files as follows:</p>
+          <ol>
+            <li>HTML files are stored in the root directory.</li>
+            <li>The root directory will also contain nested subdirectories:</li>
+            <li>/images includes icons, background images, and content images, which may have different extensions;</li>
+            <li>/styles contains stylesheets;</li>
+            <li>/scripts hosts JavaScript files;</li>
+            <li>/fonts store different fonts used in the project.</li>
+          </ol>
+          <p>This is a relatively basic file structure and is mostly used for small projects. You'll build a more complicated BEM file structure in due course, but for now, we'll stop here and look at how to link files.</p>
+          <div class="title-lesson">Click <a href="https://practicum.yandex.com/trainer/web/lesson/c092b3b1-54df-43ce-b5ad-db9b3bac9811/task/47719549-42fc-469d-94d1-2b103ed9415e/" target="_blank">HERE</a> for the lesson workpage</div>
+        </div>
+      </div>
+      <div>
+        <div class="title-topic">Absolute and Relative File Paths</div>
+        <div class="text_body">
+          <p>Web development projects often require files to be linked. For example, when you add the background-image property to your stylesheet, you need to link it to the image via the url() function. The image could be in another folder or stored somewhere online, and you need to specify where to find it. When the mailman tries to deliver you a package, but you're not home, they leave you a slip telling you where you can pick it up. The same applies here: to get to a file, you need to specify the path to it.</p>
+          <p>The path is the file's address on your computer or online. File paths can be absolute or relative.</p>
+          <p>Imagine that your computer's hard drive is the post office, and your current directory is the street you live on. An absolute path is the route from the post office to your house. A relative path starts at the beginning of your street. For an absolute path, it's important to know which post office services your neighborhood, but that doesn't matter for a relative path.</p>
+          <p>All of your computer's files are on a hard drive in a hierarchical structure.</p>
+          <div class="title-course">PICK UP FROM HERE!!!</div>
+        </div>
+      </div>
     <!--End of page-->
   </div>
 </body>

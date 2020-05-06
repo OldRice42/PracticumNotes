@@ -173,10 +173,18 @@ a:active {
 
 .text_code-inline-comment {
   color: #b68495;
+  font-style: italic;
   font-weight: bold;
   font-family: 'Courier New', Courier, monospace;
 }
 
 .topic_card {
   border: 0px violet solid;
+}
+
+.text_image-comment {
+  color: #b68495;
+  font-size: 13px;
+  font-style: italic;
+  font-family: 'Courier New', Courier, monospace;
 }

@@ -115,7 +115,28 @@
       <div>
         <div class="title-course">Relative Paths to Files</div>
         <div class="text_body">
-          <p></p>
+          <p>In the last lesson, you learned how to link files using absolute paths. We also discussed how this method can raise some issues. Another one is that when you upload your site to a remote server, all absolute file paths to your computer stop working. The web server has its own disk with an underlying file structure that differs from your device.</p>
+          <p>Relative paths avoid this problem, because you specify the path to the file you need relative to the file from which it's called. Let's use an image from the <code class="text_code-inline">/images</code> directory for the <code class="text_code-inline">background-image</code> CSS property as an example:</p>
+          <div><img src="../../images/3-5_g.png" class="image_flex-large"></div>
+          <p>Imagine that our project is represented by a skyscraper. When we create relative paths, it doesn't matter what city and state it's located in. What's important is which office we're coming from and which floor we need to go to in order to find the mail room.</p>
+          <p>Relative paths show us exactly that — how to get to the file from the place we already are.</p>
+          <div><img src="../../images/3-5_h.png" class="image_flex-large"></div>
+          <p>In our skyscraper analogy:</p>
+          <p>
+            <ul>
+              <li><code class="text_code-inline">web=project</code> — is the root directory and represents the whole building;</li>
+              <li><code class="text_code-inline">images/</code>, <code class="text_code-inline">scripts/</code>, and <code class="text_code-inline">styles/</code> — subdirectories, which represents a different floor with each file contained therein (e.g. logo.svg) representing an office on that floor;</li>
+              <li><code class="text_code-inline">index.html</code> — is our basement.</li>
+            </ul>
+          </p>
+          <p>In the example above, <code class="text_code-inline">style.css</code> is our office, located on the <code class="text_code-inline">styles/</code> floor. We need to go from there to the mail room, which is <code class="text_code-inline">body_bg.jpg</code>, on the <code class="text_code-inline">images/</code> floor.</p>
+          <div><img src="../../images/3-5_i.png" class="image_flex-large"></div>
+          <p>To create a path to your file, it should start with <code class="text_code-inline">./</code>. If you're in the <code class="text_code-inline">style.css</code> office, starting your file path like this will take you out into the floor area, and you can visit other offices if there are any.</p>
+          <div><img src="../../images/3-5_m.png" class="image_flex-large"></div>
+          <p>To get to the parent directory, we need the <code class="text_code-inline">../</code> command. This combination of characters takes one level higher, in our case to <code class="text_code-inline">web-project/</code> — the root directory. In other words, this will take us onto the elevator of our skyscraper, meaning that we can visit other floors, and that's how we get to the mail room.</p>
+          <div><img src="../../images/3-5_j.png" class="image_flex-large"></div>
+          <p class="text_image-comment">Using the elevator we went up to the images/ floor and visited the body_bg.jpg office.</p>
+          <p>Using the elevator we went up to the images/ floor and visited the body_bg.jpg office.</p>
         </div>
       </div>
     <!--End of page-->

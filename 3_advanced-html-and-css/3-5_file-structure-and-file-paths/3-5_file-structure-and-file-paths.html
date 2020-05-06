@@ -135,8 +135,17 @@
           <div><img src="../../images/3-5_m.png" class="image_flex-large"></div>
           <p>To get to the parent directory, we need the <code class="text_code-inline">../</code> command. This combination of characters takes one level higher, in our case to <code class="text_code-inline">web-project/</code> — the root directory. In other words, this will take us onto the elevator of our skyscraper, meaning that we can visit other floors, and that's how we get to the mail room.</p>
           <div><img src="../../images/3-5_j.png" class="image_flex-large"></div>
-          <p class="text_image-comment">Using the elevator we went up to the images/ floor and visited the body_bg.jpg office.</p>
-          <p>Using the elevator we went up to the images/ floor and visited the body_bg.jpg office.</p>
+          <p class="text_image-comment">Using the elevator we went up to the <code class="text_code-inline">images/</code> floor and visited the <code class="text_code-inline">body_bg.jpg</code> office.</p>
+          <p><code class="text_code-inline">./</code> — the command which refers to the directory you're at now</p>
+          <p><code class="text_code-inline">../</code> — refers to the directory on the upper lever.</p>
+          <div><img src="../../images/3-5_k.png" class="image_flex-large"></div>
+          <p class="text_image-comment">The file path to the bodybg.jpg is in yellow — you get to the root folderweb-project first and then to the images folder.</p>
+          <p>Another way of making a relative path is by simply using the <code class="text_code-inline">/</code> sign without any periods, which will take you straight to the project's root directory, which is like starting from the downstairs lobby.</p>
+          <p>As such, we can rewrite the path from our office to the mail room as follows:</p>
+          <div><img src="../../images/3-5_l.png" class="image_flex-large"></div>
+          <p>Writing your paths like this means that you can move your project onto another server without disrupting these internal links. It also means that if you add another directory inside the <code class="text_code-inline">images/</code> directory and move the <code class="text_code-inline">body_bg.jpg</code> file into it, your file path will still be valid.</p>
+          <p>Keep in mind that <code class="text_code-inline">/</code> only works on a web server. If you write a path like that in the files on your computer and open the link in a browser, you'll find yourself at the very root of the operating system.</p>
+          <div class="title-lesson">Click <a href="https://practicum.yandex.com/trainer/web/lesson/bd80e559-872e-4a60-a304-5c3ef8124424/task/f33284a0-1940-4e8d-8f87-ba44922620c7/" target="_blank">HERE</a> for the lesson workpage</div>
         </div>
       </div>
     <!--End of page-->

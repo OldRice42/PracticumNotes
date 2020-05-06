@@ -13,7 +13,7 @@
     <div class="menu">
       <!--Back to previous lesson link
       <a href=#></a>-->
-      <a href="practicumnotes-toc.html">Back to Table of Contents</a>
+      <a href="../../practicumnotes-toc.html">Back to Table of Contents</a>
       <!--Forward to next Lesson link
       <a haref="#"></a>-->
     </div>
@@ -36,7 +36,7 @@
           <p>Just like with people, every file has a name. Operating systems (OS) can identify files according to how they are called, although sometimes several files can share the same name.</p>
           <p>Files also usually have surnames, called extensions. These are used to help the OS decide what to do with a file when it's opened by the user. For example, our project's markup is stored in .html files, our styles are kept in .css files, and scripts are saved as .js files. The system tends to open .html files in a browser, while .css and .js files are opened in text editors.</p>
           <p>Sticking to our analogy of files and people, a file's attribute can be thought of as a person's occupation. Attributes simply refer to certain properties that can be assigned to files. The list of available attributes depends on the OS.</p>
-          <div><img src="#" class=image_flex-medium"></div>
+          <div><img src="../../images/3-5_a.png" class="image_flex-large"></div>
           <p>Image note: You can access a file's properties (attributes) from the menu that appears when you right-click on it</p>
           <p>Attributes come in all shapes and sizes. For example, the "readonly" attribute prevents users from writing or editing a file. This can cause complications, as you won't be able to edit files with the "readonly" attribute on a remote server without taking additional action. Users won't even see files that have the "hidden" attribute.</p>
           <p>Files can be divided into two categories:</p>
@@ -56,11 +56,11 @@
           </p>
           <p>A simple file structure is linear, meaning that all the files are on the same level and there aren't any directories nested inside the parent directory.
           </p>
-          <div><img src="#" target="_blank"></div>
+          <div><img src="../../images/3-5_b.png" class="image_flex-large"></div>
           <p>Such a simple file structure has its disadvantages. If your project has a large number of .html, .css, and .js files, along with a bunch of images, it can turn into an unnavigable mess. It could take you a while to find the file you need, whereas a developer's best friend is speed.</p>
           <p>It's better to separate your files into different folders by giving images, fonts, stylesheets, and scripts each their own directory, which makes everything easier to find. A file structure with nested directories is called a hierarchical structure.</p>
           <p>A hierarchical file structure is one that contains both files and nested subdirectories.</p>
-          <div><img src="#" target="_blank"></div>
+          <div><img src="../../images/3-5_c.png" class="image_flex-large"></div>
           <p>Web developers often structure their files as follows:</p>
           <ol>
             <li>HTML files are stored in the root directory.</li>
@@ -81,7 +81,41 @@
           <p>The path is the file's address on your computer or online. File paths can be absolute or relative.</p>
           <p>Imagine that your computer's hard drive is the post office, and your current directory is the street you live on. An absolute path is the route from the post office to your house. A relative path starts at the beginning of your street. For an absolute path, it's important to know which post office services your neighborhood, but that doesn't matter for a relative path.</p>
           <p>All of your computer's files are on a hard drive in a hierarchical structure.</p>
-          <div class="title-course">PICK UP FROM HERE!!!</div>
+          <p>The absolute path on the computer details all the steps we have to take, starting from the deepest part of our home directory and ending with the file we need.</p>
+          <p>In the image below, <code class="text_code-inline">C:/</code> represents the hard drive. This is the root directory, i.e. the starting point of our absolute path. <code class="text_code-inline">C:/Projects/html_project/images/logo.png</code> is the full absolute path, where <code class="text_code-inline">logo.png</code> is the file name, <code class="text_code-inline">/Projects/html_project/images</code> represents the nested subdirectories that need to be accessed along the path, with each individual directory on the path towards the file divided by a <code class="text_code-inline">/</code> symbol.</p>
+          <div><img src="../../images/3-5_d.png" class="image_flex-large"></div>
+          <p>This link will work from anywhere on the hard drive, but if we move the file to another directory, the path becomes invalid.</p>
+          <p>An absolute path to an online file is a link to the requested resource. It starts with the protocol <code class="text_code-inline">http://</code> or <code class="text_code-inline">https://</code>. If we compare a request for a certain address on the Internet to sending a letter to another city, then HTTP is the road our delivery truck will take there. The HTTPS protocol is like a toll road because it's safer and smoother.</p>
+          <p>Just like people move house from time to time, a file can move by changing its domain. If we change the online address of the image, the file will become unavailable on the old path. So, if the domain name of the website hosting the image changes from <code class="text_code-inline">http://www.images-hosting.com/logo.png</code> to <code class="text_code-inline">http://www.logo-hosting.com/logo.png</code>, there won't be an image at <code class="text_code-inline">http://www.images-hosting.com/logo.png</code> when we request it.</p>
+          <div><img src="../../images/3-5_e.png" class="image_flex-large"></div>
+          <p>It's generally much more efficient to host all your files in one place. If your webpage contains images stored on another domain, the images will take longer to load. While it may not always be possible to host all your content on your domain, bear in mind that sourcing your material from many different places on the Internet and using absolute paths to refer to them can take a significant toll on your site's performance.</p>
+          <div class="title-lesson">Click <a href="https://practicum.yandex.com/trainer/web/lesson/c092b3b1-54df-43ce-b5ad-db9b3bac9811/task/47719549-42fc-469d-94d1-2b103ed9415e/" target="_blank">HERE</a> for the lesson workpage</div>
+        </div>
+      </div>
+      <div>
+        <div class="title-topic">Absolute Paths and the link Tag</div>
+        <div>
+          <p>You've used the <code class="text_code-inline">< link ></code> element to apply styles before, but you did it within a simple file structure where <code class="text_code-inline">style.css</code> was on the same level as <code class="text_code-inline">index.html</code>. Here's what it looked like:</p>
+          <div><img src="../../images/3-5_f.png" class="image_flex-large"></div>
+          <p>You can use <code class="text_code-inline">< link ></code> to refer to online files by providing their address using the <code class="text_code-inline">href</code> attribute. You'll often want to link libraries, which contain code written by other developers that provide ready-made solutions to certain issues. These quick fixes can come in very handy because they allow you to focus on the main storyline - writing the code for your project - rather than getting distracted by time-consuming side quests. Libraries like these are usually hosted on something called a CDN (Content Delivery Network). Requests for files on a CDN are also made via the <code class="text_code-inline">< link ></code> element.</p>
+          <p>Here's one well-known CDN where you can find front-end libraries:</p>
+          <p><a href="https://cdnjs.com/" target="_blank">cdnjs.com - The best FOSS CDN for web related libraries to speed up your websites!</a></p>
+          <p>However, bear in mind that there are several downsides to this approach:</p>
+          <p>
+            <ul>
+              <li>You can't edit files received from a CDN;</li>
+              <li>Third-party libraries are supported by their owners, who may add new features or change some existing code, and this is completely beyond your control;</li>
+              <li>Third-party libraries are supported by their owners, who may add new features or change some existing code, and this is completely beyond your control;</li>
+            </ul>
+          </p>
+          <p>To avoid these problems, we're going to download third-party libraries using various tools. We'll discuss this in more detail later.</p>
+          <div class="title-lesson">Click <a href="https://practicum.yandex.com/trainer/web/lesson/d984024c-0d1e-4837-a258-1db068244c9a/task/b1e75e5f-6696-4103-9462-46b31f3a6f74/" target="_blank">HERE</a> for the lesson workpage</div>
+        </div>
+      </div>
+      <div>
+        <div class="title-course">Relative Paths to Files</div>
+        <div class="text_body">
+          <p></p>
         </div>
       </div>
     <!--End of page-->

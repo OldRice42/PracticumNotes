@@ -3,7 +3,7 @@ body {
 }
 
 div {
-  border: 1px solid crimson;
+  border: 0px solid crimson;
   margin-top: 10px;
   max-width: 80%;
 }

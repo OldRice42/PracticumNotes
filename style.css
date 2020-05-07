@@ -115,9 +115,10 @@ a:active {
 
 .title-topic {
   color: lightcoral;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
-  margin: 10px;
+  margin-top: 50px;
+  margin-bottom: 10px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -198,4 +199,9 @@ a:active {
   margin-top: 10px;
   max-width: 95%;
   align-content: center;
+}
+
+li {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }

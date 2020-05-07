@@ -171,7 +171,39 @@
       </div>
     </div>
     <div class="card_body">
-      <p>PICK UP HERE!!!</p>
+      <div class="title-course">Connecting Git to the Project</div>
+      <div class="text_body">
+        <p>We need to turn our project folder into a git repository, so that Git can start working with it. That means that Git will start tracking all changes made inside that directory. To do that, go to the folder containing the project and enter the command:</p>
+        <div class="text_code-box">git init</div>
+        <p>The command prompt will reply with a message that the repository has been initialized.</p>
+        <p>Make the <code class="text_code-inline">first-project</code> folder a git repository. To do that, go to the <code class="text_code-inline">first-project</code> folder using the <code class="text_code-inline">cd</code> command, and write <code class="text_code-inline">git init</code> in the command line.</p>
+        <p>After that, run the <code class="text_code-inline">git status</code> command. Git will reply that this folder has two files, <code class="text_code-inline">index.html</code> and <code class="text_code-inline">style.css</code></p>
+        <div><img src="../../images/3-6/3-6_d.png" class="image_flex-large"></div>
+        <p>Git calls these files untracked files. That means that Git sees them, but it won’t be able to save their version right now if you try.</p>
+        <p>That’s not what we want. Our goal is to learn how to save versions. To do that, add the files first. You’ll need the <code class="text_code-inline">git add</code> command for this. When using it, indicate the file name that we want to preserve in its current form. For example, <code class="text_code-inline">git add index.html</code>.</p>
+        <p>If we want to save the current status of all files, we can jump to the option <code class="text_code-inline">--all</code>. <code class="text_code-inline">git add --all</code>, or <code class="text_code-inline">git add -A</code> for short:</p>
+        <div><img src="../../images/3-6/3-6_e.png" class="image_flex-large"></div>
+        <p>Files highlighted in green are ready to be saved in their current versions. That’s what the <code class="text_code-inline">git add</code> command tells Git. But we haven’t saved them yet. We have to tell Git what we want to save before we actually save anything.</p>
+        <p>In Git, saved file versions are called commits. Making a commit means saving the current state of your repository. We’ll tackle this in the next lesson.</p>
+        <p>If we edit any file right now, it’ll turn red again:</p>
+        <div><img src="../../images/3-6/3-6_f.png" class="image_flex-large"></div>
+        <p>Use <code class="text_code-inline">git add</code> to make the updated version go to the commit, like this:</p>
+        <div class="text_code-box">
+          <p>git add index.html</p>
+        </div>
+        <p>Or use the shortened version, <code class="text_code-inline">git add --all</code>:</p>
+        <div class="text_code-box">
+          <p>git add -all</p>
+        </div>
+        <p>This will add all modified files to be saved.</p>
+      </div>
+      <div class="card_body">
+        <div class="title-topic">Making the First Commit</div>
+        <div class="text_body">
+          <p>When all files are ready to be saved, we’ll make our first commit—that is, record the changes we’ve made so far. We do this using the command git commit with the option -m. -m is followed by the name of the commit in quotation marks:</p>
+          <p>PICK UP HERE!!!!!</p>
+        </div>
+      </div>
     </div>
     <!--End of page-->
   </div>

@@ -18,7 +18,7 @@
       <a haref="#"></a>-->
     </div>
     <div class="title-course">3-5: File Structure and File Paths</div>
-    <div>
+    <div class="card_body">
       <div class="title-topic">Intro to File Structure and File Paths</div>
       <div class="text_body">
         <p>Web development involves creating a whole bunch of .html, .css, and .js files, as well as using images, font files, and videos. When you start working on big projects, the number of files and folders you'll have to work with will be astronomical. In this chapter, we'll explore how you can organize your files in such a way that everything is easy to navigate.</p>
@@ -28,7 +28,7 @@
         <p>Over the next few lessons, we're going to look at what files are made up of and typical ways of structuring them. Once we've covered the groundwork, we'll apply this logic to our project by linking the various files to each other. Don't worry, this isn't as complicated as it may seem.</p>
       </div>
     </div>
-      <div>
+      <div class="card_body">
         <div class="title-topic">Files</div>
         <div class="text_body">
           <p>In the interactive platform, your code is divided up into HTML, CSS, and JavaScript tabs. We've made this setup as simple as possible so that you don't have to waste time looking for the right file when what you really need is to focus on coding. In real-world projects, however, developers have to decide for themselves where to put style.css and where to put index.html. Learning how to organize your front-end files will help with this.</p>
@@ -46,12 +46,12 @@
           </ul>
           <p>A directory, or catalog, is where other directories and files are stored. Each project you work on will usually be stored in its own directory.</p>
           <p>Now that you know the terminology, let's move on to creating structures for files and directories.</p>
-          <!--<div class="title-lesson">Click <a href="" target="_blank">HERE</a> for the lesson workpage</div>-->
+          <!--<div class="title-part">Click <a href="" target="_blank">HERE</a> for the lesson workpage</div>-->
         </div>
       </div>
-      <div>
+      <div class="card_body">
         <div class="title-topic">Linear and Hierarchical Structures - Separating Files by Type</div>
-        <div class="text-body">
+        <div class="text_body">
           <p>A file structure is simply a way of organizing files with directories.
           </p>
           <p>A simple file structure is linear, meaning that all the files are on the same level and there aren't any directories nested inside the parent directory.
@@ -71,10 +71,10 @@
             <li>/fonts store different fonts used in the project.</li>
           </ol>
           <p>This is a relatively basic file structure and is mostly used for small projects. You'll build a more complicated BEM file structure in due course, but for now, we'll stop here and look at how to link files.</p>
-          <div class="title-lesson">Click <a href="https://practicum.yandex.com/trainer/web/lesson/c092b3b1-54df-43ce-b5ad-db9b3bac9811/task/47719549-42fc-469d-94d1-2b103ed9415e/" target="_blank">HERE</a> for the lesson workpage</div>
+          <div class="title-part">Click <a href="https://practicum.yandex.com/trainer/web/lesson/c092b3b1-54df-43ce-b5ad-db9b3bac9811/task/47719549-42fc-469d-94d1-2b103ed9415e/" target="_blank">HERE</a> for the lesson workpage</div>
         </div>
       </div>
-      <div>
+      <div class="card_body">
         <div class="title-topic">Absolute and Relative File Paths</div>
         <div class="text_body">
           <p>Web development projects often require files to be linked. For example, when you add the background-image property to your stylesheet, you need to link it to the image via the url() function. The image could be in another folder or stored somewhere online, and you need to specify where to find it. When the mailman tries to deliver you a package, but you're not home, they leave you a slip telling you where you can pick it up. The same applies here: to get to a file, you need to specify the path to it.</p>
@@ -89,10 +89,10 @@
           <p>Just like people move house from time to time, a file can move by changing its domain. If we change the online address of the image, the file will become unavailable on the old path. So, if the domain name of the website hosting the image changes from <code class="text_code-inline">http://www.images-hosting.com/logo.png</code> to <code class="text_code-inline">http://www.logo-hosting.com/logo.png</code>, there won't be an image at <code class="text_code-inline">http://www.images-hosting.com/logo.png</code> when we request it.</p>
           <div><img src="../../images/3-5_e.png" class="image_flex-large"></div>
           <p>It's generally much more efficient to host all your files in one place. If your webpage contains images stored on another domain, the images will take longer to load. While it may not always be possible to host all your content on your domain, bear in mind that sourcing your material from many different places on the Internet and using absolute paths to refer to them can take a significant toll on your site's performance.</p>
-          <div class="title-lesson">Click <a href="https://practicum.yandex.com/trainer/web/lesson/c092b3b1-54df-43ce-b5ad-db9b3bac9811/task/47719549-42fc-469d-94d1-2b103ed9415e/" target="_blank">HERE</a> for the lesson workpage</div>
+          <div class="title-part">Click <a href="https://practicum.yandex.com/trainer/web/lesson/c092b3b1-54df-43ce-b5ad-db9b3bac9811/task/47719549-42fc-469d-94d1-2b103ed9415e/" target="_blank">HERE</a> for the lesson workpage</div>
         </div>
       </div>
-      <div>
+      <div class="card_body">
         <div class="title-topic">Absolute Paths and the link Tag</div>
         <div>
           <p>You've used the <code class="text_code-inline">< link ></code> element to apply styles before, but you did it within a simple file structure where <code class="text_code-inline">style.css</code> was on the same level as <code class="text_code-inline">index.html</code>. Here's what it looked like:</p>
@@ -109,11 +109,11 @@
             </ul>
           </p>
           <p>To avoid these problems, we're going to download third-party libraries using various tools. We'll discuss this in more detail later.</p>
-          <div class="title-lesson">Click <a href="https://practicum.yandex.com/trainer/web/lesson/d984024c-0d1e-4837-a258-1db068244c9a/task/b1e75e5f-6696-4103-9462-46b31f3a6f74/" target="_blank">HERE</a> for the lesson workpage</div>
+          <div class="title-part">Click <a href="https://practicum.yandex.com/trainer/web/lesson/d984024c-0d1e-4837-a258-1db068244c9a/task/b1e75e5f-6696-4103-9462-46b31f3a6f74/" target="_blank">HERE</a> for the lesson workpage</div>
         </div>
       </div>
-      <div>
-        <div class="title-course">Relative Paths to Files</div>
+      <div class="card_body">
+        <div class="title-topic">Relative Paths to Files</div>
         <div class="text_body">
           <p>In the last lesson, you learned how to link files using absolute paths. We also discussed how this method can raise some issues. Another one is that when you upload your site to a remote server, all absolute file paths to your computer stop working. The web server has its own disk with an underlying file structure that differs from your device.</p>
           <p>Relative paths avoid this problem, because you specify the path to the file you need relative to the file from which it's called. Let's use an image from the <code class="text_code-inline">/images</code> directory for the <code class="text_code-inline">background-image</code> CSS property as an example:</p>
@@ -145,10 +145,10 @@
           <div><img src="../../images/3-5_l.png" class="image_flex-large"></div>
           <p>Writing your paths like this means that you can move your project onto another server without disrupting these internal links. It also means that if you add another directory inside the <code class="text_code-inline">images/</code> directory and move the <code class="text_code-inline">body_bg.jpg</code> file into it, your file path will still be valid.</p>
           <p>Keep in mind that <code class="text_code-inline">/</code> only works on a web server. If you write a path like that in the files on your computer and open the link in a browser, you'll find yourself at the very root of the operating system.</p>
-          <div class="title-lesson">Click <a href="https://practicum.yandex.com/trainer/web/lesson/bd80e559-872e-4a60-a304-5c3ef8124424/task/f33284a0-1940-4e8d-8f87-ba44922620c7/" target="_blank">HERE</a> for the lesson workpage</div>
+          <div class="title-part">Click <a href="https://practicum.yandex.com/trainer/web/lesson/bd80e559-872e-4a60-a304-5c3ef8124424/task/f33284a0-1940-4e8d-8f87-ba44922620c7/" target="_blank">HERE</a> for the lesson workpage</div>
         </div>
       </div>
-      <div>
+      <div class="card_body">
         <div class="title-topic">CSS At-RUles. @import</div>
         <div class="text_body">
           <p>The <code class="text_code-inline">< link ></code> element isn't the only way you can link files to your project. In this lesson, we'll learn how to do it using at-rules.</p>
@@ -169,10 +169,10 @@
           </p>
           <p>The advantages of importing can be seen when we look at an automatic module bundler like Webpack. You can divide the code into smaller blocks based on their functions and features, which allows you to create templates and develop projects more efficiently.</p>
           <p>We'll look at all this in more detail later on, but for now, you just need to know what an at-rule is, and how to import a file to your CSS code.</p>
-          <div class="title-lesson">Click <a href="https://practicum.yandex.com/trainer/web/lesson/e52efd47-4d0f-465f-98e8-700acf759161/task/c1cf8574-574e-4104-9938-f9f802dd0ca3/" target="_blank">HERE</a> for the lesson workpage</div>
+          <div class="title-part">Click <a href="https://practicum.yandex.com/trainer/web/lesson/e52efd47-4d0f-465f-98e8-700acf759161/task/c1cf8574-574e-4104-9938-f9f802dd0ca3/" target="_blank">HERE</a> for the lesson workpage</div>
         </div>
       </div>
-      <div>
+      <div class="card_body">
         <div class="title-topic">Conclusion</div>
         <div>
           <p>PICK UP HERE AFTER LESSON</p>

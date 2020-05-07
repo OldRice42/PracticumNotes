@@ -181,74 +181,14 @@ a:active {
 }
 
 .text_code-inline-comment {
-<<<<<<< HEAD
-  color: lightcoral;
-=======
   color: #b68495;
   font-style: italic;
->>>>>>> iss6
   font-weight: bold;
   font-style: italic;
   font-family: 'Courier New', Courier, monospace;
 }
 
 .topic_card {
-<<<<<<< HEAD
-  border: 0px crimson solid;
-}
-
-/*sample colors*/
-
-.sample_gloom {
-  color: #1c142b;
-  font-size: 24px;
-  font-weight: bold;
-  margin: 10px;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: black;
-  border: 1px solid black;
-  width: 50%
-}
-
-.sample_crimson {
-    color: crimson;
-  font-size: 24px;
-  font-weight: bold;
-  margin: 10px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.sample_lightcoral {
-    color: lightcoral;
-  font-size: 24px;
-  font-weight: bold;
-  margin: 10px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.sample_cornsilk {
-    color: cornsilk;
-  font-size: 24px;
-  font-weight: bold;
-  margin: 10px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.sample_aqua {
-    color: aqua;
-  font-size: 24px;
-  font-weight: bold;
-  margin: 10px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.sample_azure {
-    color: azure;
-  font-size: 24px;
-  font-weight: bold;
-  margin: 10px;
-  font-family: Arial, Helvetica, sans-serif;
-=======
   border: 0px violet solid;
 }
 
@@ -263,5 +203,4 @@ a:active {
   margin-top: 10px;
   max-width: 95%;
   align-content: center;
->>>>>>> iss6
 }

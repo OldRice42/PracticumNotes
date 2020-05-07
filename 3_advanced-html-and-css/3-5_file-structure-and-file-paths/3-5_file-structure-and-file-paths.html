@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <!-- The main title-->
-  <title>PRACTICUM NOTES - CSS Sample Sheet</title>
+  <title>PRACTICUM NOTES - File Structure and File Paths</title>
   <link rel="stylesheet" href="../../style.css">
 </head>
 <body>
@@ -13,13 +13,183 @@
     <div class="menu">
       <!--Back to previous lesson link
       <a href=#></a>-->
-      <a href="practicumnotes-toc.html">Back to Table of Contents</a>
+      <a href="../../practicumnotes-toc.html">Back to Table of Contents</a>
       <!--Forward to next Lesson link
       <a haref="#"></a>-->
     </div>
-    <div>
-
+    <div class="title-course">3-5: File Structure and File Paths</div>
+    <div class="card_body">
+      <div class="title-topic">Intro to File Structure and File Paths</div>
+      <div class="text_body">
+        <p>Web development involves creating a whole bunch of .html, .css, and .js files, as well as using images, font files, and videos. When you start working on big projects, the number of files and folders you'll have to work with will be astronomical. In this chapter, we'll explore how you can organize your files in such a way that everything is easy to navigate.</p>
+        <p>Whenever you have a large amount of information, it needs to be arranged systematically. For example, a clinic needs to keep medical records on all of its patients. This is usually done with filing cabinets, which are arranged alphabetically.</p>
+        <p>As such, when we need to take a look at a certain patient's records, the filing cabinet system allows us to quickly access whichever file we need simply by searching for the patient's surname.</p>
+        <p>Information can be organized on computers according to similar principles. Files are stored in folders, which in turn are kept in other folders. This needs to be done in a way that makes it easy to find whatever you're looking for, while also establishing links between certain files. For example, each webpage on your site will have both a markup file and a stylesheet, so you need to make it clear which .html file goes with which .css file.</p>
+        <p>Over the next few lessons, we're going to look at what files are made up of and typical ways of structuring them. Once we've covered the groundwork, we'll apply this logic to our project by linking the various files to each other. Don't worry, this isn't as complicated as it may seem.</p>
+      </div>
     </div>
+      <div class="card_body">
+        <div class="title-topic">Files</div>
+        <div class="text_body">
+          <p>In the interactive platform, your code is divided up into HTML, CSS, and JavaScript tabs. We've made this setup as simple as possible so that you don't have to waste time looking for the right file when what you really need is to focus on coding. In real-world projects, however, developers have to decide for themselves where to put style.css and where to put index.html. Learning how to organize your front-end files will help with this.</p>
+          <p>First of all, let's take a closer look at what a file actually is. A file is a collection of data that can be written, edited, or read by a user or program. They take up a certain amount of space on the device where they're stored, such as on a computer's hard drive.</p>
+          <p>Just like with people, every file has a name. Operating systems (OS) can identify files according to how they are called, although sometimes several files can share the same name.</p>
+          <p>Files also usually have surnames, called extensions. These are used to help the OS decide what to do with a file when it's opened by the user. For example, our project's markup is stored in .html files, our styles are kept in .css files, and scripts are saved as .js files. The system tends to open .html files in a browser, while .css and .js files are opened in text editors.</p>
+          <p>Sticking to our analogy of files and people, a file's attribute can be thought of as a person's occupation. Attributes simply refer to certain properties that can be assigned to files. The list of available attributes depends on the OS.</p>
+          <div><img src="../../images/3-5_a.png" class="image_flex-large"></div>
+          <p>Image note: You can access a file's properties (attributes) from the menu that appears when you right-click on it</p>
+          <p>Attributes come in all shapes and sizes. For example, the "readonly" attribute prevents users from writing or editing a file. This can cause complications, as you won't be able to edit files with the "readonly" attribute on a remote server without taking additional action. Users won't even see files that have the "hidden" attribute.</p>
+          <p>Files can be divided into two categories:</p>
+          <ul>
+            <li><b>Data files</b>: These are what web developers work with. They include graphic and text files, database files, and scenario files (scripts).</li>
+            <li><b>Program files</b>: These have the extension of the current OS. They perform system functions. For example, files with the .lnk extension are shortcuts or links on Windows systems.</li>
+          </ul>
+          <p>A directory, or catalog, is where other directories and files are stored. Each project you work on will usually be stored in its own directory.</p>
+          <p>Now that you know the terminology, let's move on to creating structures for files and directories.</p>
+          <!--<div class="title-part">Click <a href="" target="_blank">HERE</a> for the lesson workpage</div>-->
+        </div>
+      </div>
+      <div class="card_body">
+        <div class="title-topic">Linear and Hierarchical Structures - Separating Files by Type</div>
+        <div class="text_body">
+          <p>A file structure is simply a way of organizing files with directories.
+          </p>
+          <p>A simple file structure is linear, meaning that all the files are on the same level and there aren't any directories nested inside the parent directory.
+          </p>
+          <div><img src="../../images/3-5_b.png" class="image_flex-large"></div>
+          <p>Such a simple file structure has its disadvantages. If your project has a large number of .html, .css, and .js files, along with a bunch of images, it can turn into an unnavigable mess. It could take you a while to find the file you need, whereas a developer's best friend is speed.</p>
+          <p>It's better to separate your files into different folders by giving images, fonts, stylesheets, and scripts each their own directory, which makes everything easier to find. A file structure with nested directories is called a hierarchical structure.</p>
+          <p>A hierarchical file structure is one that contains both files and nested subdirectories.</p>
+          <div><img src="../../images/3-5_c.png" class="image_flex-large"></div>
+          <p>Web developers often structure their files as follows:</p>
+          <ol>
+            <li>HTML files are stored in the root directory.</li>
+            <li>The root directory will also contain nested subdirectories:</li>
+            <li>/images includes icons, background images, and content images, which may have different extensions;</li>
+            <li>/styles contains stylesheets;</li>
+            <li>/scripts hosts JavaScript files;</li>
+            <li>/fonts store different fonts used in the project.</li>
+          </ol>
+          <p>This is a relatively basic file structure and is mostly used for small projects. You'll build a more complicated BEM file structure in due course, but for now, we'll stop here and look at how to link files.</p>
+          <div class="title-part">Click <a href="https://practicum.yandex.com/trainer/web/lesson/c092b3b1-54df-43ce-b5ad-db9b3bac9811/task/47719549-42fc-469d-94d1-2b103ed9415e/" target="_blank">HERE</a> for the lesson workpage</div>
+        </div>
+      </div>
+      <div class="card_body">
+        <div class="title-topic">Absolute and Relative File Paths</div>
+        <div class="text_body">
+          <p>Web development projects often require files to be linked. For example, when you add the background-image property to your stylesheet, you need to link it to the image via the url() function. The image could be in another folder or stored somewhere online, and you need to specify where to find it. When the mailman tries to deliver you a package, but you're not home, they leave you a slip telling you where you can pick it up. The same applies here: to get to a file, you need to specify the path to it.</p>
+          <p>The path is the file's address on your computer or online. File paths can be absolute or relative.</p>
+          <p>Imagine that your computer's hard drive is the post office, and your current directory is the street you live on. An absolute path is the route from the post office to your house. A relative path starts at the beginning of your street. For an absolute path, it's important to know which post office services your neighborhood, but that doesn't matter for a relative path.</p>
+          <p>All of your computer's files are on a hard drive in a hierarchical structure.</p>
+          <p>The absolute path on the computer details all the steps we have to take, starting from the deepest part of our home directory and ending with the file we need.</p>
+          <p>In the image below, <code class="text_code-inline">C:/</code> represents the hard drive. This is the root directory, i.e. the starting point of our absolute path. <code class="text_code-inline">C:/Projects/html_project/images/logo.png</code> is the full absolute path, where <code class="text_code-inline">logo.png</code> is the file name, <code class="text_code-inline">/Projects/html_project/images</code> represents the nested subdirectories that need to be accessed along the path, with each individual directory on the path towards the file divided by a <code class="text_code-inline">/</code> symbol.</p>
+          <div><img src="../../images/3-5_d.png" class="image_flex-large"></div>
+          <p>This link will work from anywhere on the hard drive, but if we move the file to another directory, the path becomes invalid.</p>
+          <p>An absolute path to an online file is a link to the requested resource. It starts with the protocol <code class="text_code-inline">http://</code> or <code class="text_code-inline">https://</code>. If we compare a request for a certain address on the Internet to sending a letter to another city, then HTTP is the road our delivery truck will take there. The HTTPS protocol is like a toll road because it's safer and smoother.</p>
+          <p>Just like people move house from time to time, a file can move by changing its domain. If we change the online address of the image, the file will become unavailable on the old path. So, if the domain name of the website hosting the image changes from <code class="text_code-inline">http://www.images-hosting.com/logo.png</code> to <code class="text_code-inline">http://www.logo-hosting.com/logo.png</code>, there won't be an image at <code class="text_code-inline">http://www.images-hosting.com/logo.png</code> when we request it.</p>
+          <div><img src="../../images/3-5_e.png" class="image_flex-large"></div>
+          <p>It's generally much more efficient to host all your files in one place. If your webpage contains images stored on another domain, the images will take longer to load. While it may not always be possible to host all your content on your domain, bear in mind that sourcing your material from many different places on the Internet and using absolute paths to refer to them can take a significant toll on your site's performance.</p>
+          <div class="title-part">Click <a href="https://practicum.yandex.com/trainer/web/lesson/c092b3b1-54df-43ce-b5ad-db9b3bac9811/task/47719549-42fc-469d-94d1-2b103ed9415e/" target="_blank">HERE</a> for the lesson workpage</div>
+        </div>
+      </div>
+      <div class="card_body">
+        <div class="title-topic">Absolute Paths and the link Tag</div>
+        <div>
+          <p>You've used the <code class="text_code-inline">< link ></code> element to apply styles before, but you did it within a simple file structure where <code class="text_code-inline">style.css</code> was on the same level as <code class="text_code-inline">index.html</code>. Here's what it looked like:</p>
+          <div><img src="../../images/3-5_f.png" class="image_flex-large"></div>
+          <p>You can use <code class="text_code-inline">< link ></code> to refer to online files by providing their address using the <code class="text_code-inline">href</code> attribute. You'll often want to link libraries, which contain code written by other developers that provide ready-made solutions to certain issues. These quick fixes can come in very handy because they allow you to focus on the main storyline - writing the code for your project - rather than getting distracted by time-consuming side quests. Libraries like these are usually hosted on something called a CDN (Content Delivery Network). Requests for files on a CDN are also made via the <code class="text_code-inline">< link ></code> element.</p>
+          <p>Here's one well-known CDN where you can find front-end libraries:</p>
+          <p><a href="https://cdnjs.com/" target="_blank">cdnjs.com - The best FOSS CDN for web related libraries to speed up your websites!</a></p>
+          <p>However, bear in mind that there are several downsides to this approach:</p>
+          <p>
+            <ul>
+              <li>You can't edit files received from a CDN;</li>
+              <li>Third-party libraries are supported by their owners, who may add new features or change some existing code, and this is completely beyond your control;</li>
+              <li>Third-party libraries are supported by their owners, who may add new features or change some existing code, and this is completely beyond your control;</li>
+            </ul>
+          </p>
+          <p>To avoid these problems, we're going to download third-party libraries using various tools. We'll discuss this in more detail later.</p>
+          <div class="title-part">Click <a href="https://practicum.yandex.com/trainer/web/lesson/d984024c-0d1e-4837-a258-1db068244c9a/task/b1e75e5f-6696-4103-9462-46b31f3a6f74/" target="_blank">HERE</a> for the lesson workpage</div>
+        </div>
+      </div>
+      <div class="card_body">
+        <div class="title-topic">Relative Paths to Files</div>
+        <div class="text_body">
+          <p>In the last lesson, you learned how to link files using absolute paths. We also discussed how this method can raise some issues. Another one is that when you upload your site to a remote server, all absolute file paths to your computer stop working. The web server has its own disk with an underlying file structure that differs from your device.</p>
+          <p>Relative paths avoid this problem, because you specify the path to the file you need relative to the file from which it's called. Let's use an image from the <code class="text_code-inline">/images</code> directory for the <code class="text_code-inline">background-image</code> CSS property as an example:</p>
+          <div><img src="../../images/3-5_g.png" class="image_flex-large"></div>
+          <p>Imagine that our project is represented by a skyscraper. When we create relative paths, it doesn't matter what city and state it's located in. What's important is which office we're coming from and which floor we need to go to in order to find the mail room.</p>
+          <p>Relative paths show us exactly that — how to get to the file from the place we already are.</p>
+          <div><img src="../../images/3-5_h.png" class="image_flex-large"></div>
+          <p>In our skyscraper analogy:</p>
+          <p>
+            <ul>
+              <li><code class="text_code-inline">web=project</code> — is the root directory and represents the whole building;</li>
+              <li><code class="text_code-inline">images/</code>, <code class="text_code-inline">scripts/</code>, and <code class="text_code-inline">styles/</code> — subdirectories, which represents a different floor with each file contained therein (e.g. logo.svg) representing an office on that floor;</li>
+              <li><code class="text_code-inline">index.html</code> — is our basement.</li>
+            </ul>
+          </p>
+          <p>In the example above, <code class="text_code-inline">style.css</code> is our office, located on the <code class="text_code-inline">styles/</code> floor. We need to go from there to the mail room, which is <code class="text_code-inline">body_bg.jpg</code>, on the <code class="text_code-inline">images/</code> floor.</p>
+          <div><img src="../../images/3-5_i.png" class="image_flex-large"></div>
+          <p>To create a path to your file, it should start with <code class="text_code-inline">./</code>. If you're in the <code class="text_code-inline">style.css</code> office, starting your file path like this will take you out into the floor area, and you can visit other offices if there are any.</p>
+          <div><img src="../../images/3-5_m.png" class="image_flex-large"></div>
+          <p>To get to the parent directory, we need the <code class="text_code-inline">../</code> command. This combination of characters takes one level higher, in our case to <code class="text_code-inline">web-project/</code> — the root directory. In other words, this will take us onto the elevator of our skyscraper, meaning that we can visit other floors, and that's how we get to the mail room.</p>
+          <div><img src="../../images/3-5_j.png" class="image_flex-large"></div>
+          <p class="text_image-comment">Using the elevator we went up to the <code class="text_code-inline">images/</code> floor and visited the <code class="text_code-inline">body_bg.jpg</code> office.</p>
+          <p><code class="text_code-inline">./</code> — the command which refers to the directory you're at now</p>
+          <p><code class="text_code-inline">../</code> — refers to the directory on the upper lever.</p>
+          <div><img src="../../images/3-5_k.png" class="image_flex-large"></div>
+          <p class="text_image-comment">The file path to the bodybg.jpg is in yellow — you get to the root folderweb-project first and then to the images folder.</p>
+          <p>Another way of making a relative path is by simply using the <code class="text_code-inline">/</code> sign without any periods, which will take you straight to the project's root directory, which is like starting from the downstairs lobby.</p>
+          <p>As such, we can rewrite the path from our office to the mail room as follows:</p>
+          <div><img src="../../images/3-5_l.png" class="image_flex-large"></div>
+          <p>Writing your paths like this means that you can move your project onto another server without disrupting these internal links. It also means that if you add another directory inside the <code class="text_code-inline">images/</code> directory and move the <code class="text_code-inline">body_bg.jpg</code> file into it, your file path will still be valid.</p>
+          <p>Keep in mind that <code class="text_code-inline">/</code> only works on a web server. If you write a path like that in the files on your computer and open the link in a browser, you'll find yourself at the very root of the operating system.</p>
+          <div class="title-part">Click <a href="https://practicum.yandex.com/trainer/web/lesson/bd80e559-872e-4a60-a304-5c3ef8124424/task/f33284a0-1940-4e8d-8f87-ba44922620c7/" target="_blank">HERE</a> for the lesson workpage</div>
+        </div>
+      </div>
+      <div class="card_body">
+        <div class="title-topic">CSS At-RUles. @import</div>
+        <div class="text_body">
+          <p>The <code class="text_code-inline">< link ></code> element isn't the only way you can link files to your project. In this lesson, we'll learn how to do it using at-rules.</p>
+          <p>At-rules are instructions in CSS that change the behavior or appearance of elements on a webpage. You can use them to link CSS code and fonts, as well as to create animations. The essential parts of any at-rule are the <code class="text_code-inline">@</code> symbol, called an identifier, followed by the name of the at-rule.</p>
+          <div><img src="../../images/3-5_n.png" class="image_flex-large"></div>
+          <p>There are many at-rules in CSS, each with its own syntax. For now, we're just going to learn how the <code class="text_code-inline">@import</code> at-rule works. We'll take a look at some others down the road.</p>
+          <div><img src="../../images/3-5_o.png" class="image_flex-large"></div>
+          <p>The <code class="text_code-inline">@import</code> at-rule allows you to include external files - such as fonts or extra snippets of CSS code - in the current stylesheet.</p>
+          <p>Moreover, <code class="text_code-inline">@import</code> makes it possible to put together several CSS files to make one big one, kind of like building a tower out of Lego blocks. You can also divide one big CSS file into smaller ones that are easier to maintain and can be used in multiple places. A big project can contain tens of thousands of lines of CSS code, so dividing them up is a must.</p>
+          <div class="text_code-box">@import url(main.css);</div>
+          <p>You introduce the at-rule to indicate the path to the requested file, which goes inside the <code class="text_code-inline">url()</code> function. It's important to note that there's a semi-colon, not a full colon, at the end of an at-rule.</p>
+          <p>There are a couple of things about <code class="text_code-inline">@import</code> to bear in mind:</p>
+          <p>
+            <ul>
+              <li>The way <code class="text_code-inline">@import</code> works in CSS is that each at-rule is loaded and processed in the order in which they appear in the code. This may slow down the load speed of your website. The <code class="text_code-inline">< link ></code> element, on the other hand, lets you load files simultaneously.</li>
+              <li><code class="text_code-inline">@import</code> will only work when it's written at the beginning of a file. External files load first. The styles that come after them can overwrite them.</li>
+            </ul>
+          </p>
+          <p>The advantages of importing can be seen when we look at an automatic module bundler like Webpack. You can divide the code into smaller blocks based on their functions and features, which allows you to create templates and develop projects more efficiently.</p>
+          <p>We'll look at all this in more detail later on, but for now, you just need to know what an at-rule is, and how to import a file to your CSS code.</p>
+          <div class="title-part">Click <a href="https://practicum.yandex.com/trainer/web/lesson/e52efd47-4d0f-465f-98e8-700acf759161/task/c1cf8574-574e-4104-9938-f9f802dd0ca3/" target="_blank">HERE</a> for the lesson workpage</div>
+        </div>
+      </div>
+      <div class="card_body">
+        <div class="title-topic">Conclusion</div>
+        <div class="text_body">
+          <p>Done! You've learned how to create a distributed file structure for the project. You got files to communicate with one another inside the project, as well as with online files using relative and absolute paths.</p>
+          <p>It's crucial to understand when you need an absolute file path, and when to use a relative one. Knowing how to write these paths is equally important. Honing this skill will serve you well over the course of your studies and beyond.</p>
+          <p>Real-world projects usually have lots of files, and they'll often need to be linked to each other. On top of that, you may have to do so within a very complex, or non-standard file structure, which is where your knowledge of relative path files will really prove its worth.</p>
+          <p>Absolute paths are required when adding third-party code to a project. This process will get a lot easier later on when we study npm, a special package manager that takes interacting with external files to a whole new level.</p>
+          <p>Now you've got a handle on file structure by file type. This approach has several advantages in that it's:</p>
+          <p>
+            <ul>
+              <li>easy to create;</li>
+              <li>a great fit for small projects with one or several webpages;</li>
+              <li>easy to understand and organize, even for beginners.</li>
+            </ul>
+          </p>
+          <p>Later on, we'll introduce you to a larger, more complex file structure that you'll need in other situations. Once you learn how to use this, you'll start to get a feel for which structure is best suited to dealing with a specific task.</p>
+        </div>
+      </div>
     <!--End of page-->
   </div>
 </body>

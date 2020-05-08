@@ -3,22 +3,207 @@
 <head>
   <meta charset="UTF-8">
   <!-- The main title-->
-  <title>PRACTICUM NOTES - CSS Sample Sheet</title>
+  <title>PRACTICUM NOTES - Basics of HTML and CSS</title>
   <link rel="stylesheet" href="../../style.css">
 </head>
 <body>
   <div class="page">
-    <!--Start of page-->
+  <!--Top of page-->
     <div><img src="../../images/practicumnoteslogo.png"></div>
+    <a name="topofpage"></a>
     <div class="menu">
-      <!--Back to previous lesson link
-      <a href=#></a>-->
-      <a href="practicumnotes-toc.html">Back to Table of Contents</a>
-      <!--Forward to next Lesson link
-      <a haref="#"></a>-->
+       <a href="../../practicumnotes-toc.html">Back to Table of Contents</a>
     </div>
-    <div>
-
+    <!--Start notes-->
+    <div class="card_body">
+      <div class="title-course">Git for Beginners</div>
+      <div class="title-topic">Intro to Git</div>
+      <div class="text_body">
+        <p>You’re starting to get familiar with front-end development. Now it’s time for your first independent project. It'll look even more like the projects you’ll see in the real world. You’ll have to write a lot of HTML and CSS. We'll also get to know, bit by bit, the tools that web developers use daily. We'll focus on Git first. Before we take a look at it, let’s look at what it’s used for.</p>
+        <p><b>Version Control</b></p>
+        <p>Imagine that you’ve successfully created a website for a client. The website is running, and people are visiting it. The client asks you to redo part of the website’s functionality. They believe that it’ll make using the website easier. You make the changes, update everything, then leave it and forget it. A month later, the client writes to tell you that their assumption was wrong, and they want to revert the website back to its previous state. But you don’t have the previous version saved, so you have to write everything from scratch again.</p>
+        <p>This wouldn’t happen if there were a way to save file versions from different times. You could just revert to the previous version without needing to redo anything. Imagine that the entire file history has been saved and that you can revert to code from the past:</p>
+        <div><img src="../../images/3-6/3-6_a.png" class="image_flex-large"></div>
+        <p>Guess what? Git knows how to handle tasks like this. We can save different versions of the code as we write and rewrite it. That’s why Git is called a version control system.</p>
+        <p><b>Teamwork</b></p>
+        <p>You’ve been working on your project and tasks by yourself. In real life, however, you’ll be expected to write code as part of a team. Several people can work on one website.</p>
+        <p>You could build it with a friend, for instance. Every time you add changes to the code, you could send your friend an updated archive. Then your friend could download it, put in some changes, and send it back to you. But then you decide to put in your changes before your friend sends back his version. After all, it’s quicker to work in parallel.</p>
+        <p>The two of you end up sending each other archives with changes at the same time. How do you combine them? There are lots of changes, and neither one of you remembers exactly what you changed. You have to open your code on the left, your friend’s code on the right, and compare everything manually. Don't want to work that way? Don’t sweat it. Git will do it automatically.</p>
+        <p><b>Summary</b></p>
+        <p>The ability to save and merge team members' work makes Git an indispensable tool when working on code as a team. Most employers require you to know how to use it. That’s why we integrate it into projects from the get-go. This chapter is about Git.</p>
+      </div>
+    </div>
+    <div class="card_body">
+      <div class="title-topic">Installing Git</div>
+      <div class="text_body">
+        <p>You have to install Git, just as you would any other software. What you have to do varies from one operating system to another. Select your OS.</p>
+        <p><b>Windows</b></p>
+        <p>Download and install Git on your computer. <a href="https://git-scm.com/download/" target="_blank">Link to the download page on Git’s official website</a>.</p>
+        <p>When you launch the installer, you’ll have the option to install Git Bash, too. This is another program that helps Git run correctly. Be sure to check the box to install it. Check “Use Git from the Command Prompt,” too. We’ll discuss this further in the next lesson.</p>
+        <p><b>macOS</b></p>
+        <p>Download and install Git on your computer. <a href="https://git-scm.com/download/" target="_blank">Link to the download page on Git’s official website</a>.</p>
+        <p>It’s pretty simple, except for one thing. The installer will offer you several ways to use Git. Select “Use Git from the Command Prompt.” We’ll cover that in more detail in the next lesson.</p>
+        <p><b>Linux</b></p>
+        <p>Download and install Git on your computer. <a href="https://git-scm.com/download/" target="_blank">Link to the download page on Git’s official website</a>.</p>
+        <p>Use the Terminal to install it. Search for the Terminal and select it from the list of programs. The Terminal lets you use only text commands to interact with the program. Search for the Install Git command for your version of Linux, paste it in the Terminal, and press Enter. Congratulations! You’ve installed Git.</p>
+      </div>
+    </div>
+    <div class="card_body">
+      <div class="title-topic">Command Line</div>
+      <div class="text_body">
+        <p>We’ve gotten used to software having graphical interfaces with buttons and drop-down menus with settings. The command line is also an interface. It just happens to be a text-based one. You have to enter commands to work with programs. For example, to create a folder, you usually right-click and select the option you need in the graphical menu. But you can also create a folder with the command prompt by entering the appropriate command and the folder name. It’s just a different kind of interface.</p>
+        <p>Now let’s get down to business. To open the command prompt:</p>
+        <p>
+          <ul>
+            <li>On Windows, open GIt Bash.</li>
+            <li>On macOS or Linux, open Terminal.</li>
+          </ul>
+        </p>
+        <p>We talked about creating a folder in our example, so let’s explore how to do that in the command prompt.</p>
+        <p>In the command prompt, you’re always in a folder, too. You just can’t see it. The pwd command lets you find out where you currently are. PWD stands for print working directory. Enter pwd in the command prompt and press Enter:</p>
+        <div class="text_code-box">
+          <p>pwd</p>
+          <p>/Users/students_yandex</p>
+        </div>
+        <p>The command prompt returns a response. It’s the path to the folder we’re in right now. You’ll see your username instead of <code class="text_code-inline">students_yandex</code>. This is the home directory, or the directory where the user stores their personal files. When you open the command prompt, this is where you start off.</p>
+        <p>In a graphical interface, you see the open folder’s content. Use the <code class="text_code-inline">ls</code> command to do this in the command prompt. The command is used to list directory contents. If you type this command and press Enter, you’ll see the current directory’s contents: its files and folders.</p>
+        <div><img src="../../images/3-6/3-6_b.png" class="image_flex-large"></div>
+        <p>So now we know where we are. We’ve had a look around, and now it’s time to learn how to move around. To go from one folder to another, use the <code class="text_code-inline">cd</code> command. This stands for <i>change directory</i>. The syntax for this command is <code class="text_code-inline">cd file_name</code>:</p>
+        <div class="text_code-box">
+          <p>cd Desktop # going to the desktop</p>
+          <p>pwd</p>
+          <p>/Users/students_yandex/Desktop # this is where we are now</p>
+        </div>
+        <p>If the folder name has spaces, use quotation marks:</p>
+        <div class="text_code-box">
+          <p>cd "Desk top"</p>
+        </div>
+        <p>To return to the parent directory—that is, one level higher—write two dots <code class="text_code-inline">..</code> instead of the folder name:</p>
+        <div class="text_code-box">
+          <p>cd .. # going one level higher</p>
+          <p>pwd</p>
+          <p>/Users/students_yandex # we're back
+          </p>
+        </div>
+        <p>Why two dots? Who knows?!</p>
+        <p><b>Creating folders and files</b></p>
+        <p>Now let’s do something. The <code class="text_code-inline">mkdir</code> command creates a folder. Assign the name of the new folder to the command.</p>
+        <p>Create a folder called <code class="text_code-inline">dev</code> in the home directory.. This will be where you save your school projects:</p>
+        <div class="text_code-box">
+          <p>mkdir dev # will create the dev folder in the current directory</p>
+        </div>
+        <p>Go to the dev folder, create a folder called first-project inside it, and go to that folder:</p>
+        <div class="text_code-box">
+          <p>cd dev</p>
+          <p>mkdir first-project</p>
+          <p>cd first-project</p>
+        </div>
+        <p>Let’s create the files we need. We can do this with the touch command, assigning it the file name, for example:</p>
+        <div class="text_code-box">
+          <p>touch index.html # will create the index.html file in the current folder</p>
+        </div>
+        <p>Create the <code class="text_code-inline">style.css</code> file on your own.</p>
+        <p>By the end of this lesson, your home directory should have the <code class="text_code-inline">dev</code> folder with the <code class="text_code-inline">first-project</code> folder inside it and two files inside that, <code class="text_code-inline">index.html</code> and <code class="text_code-inline">style.css</code>.</p>
+        <p><b>Deleting folders and files</b></p>
+        <p>The last thing we’ll do is learn how to use the command prompt to delete files and folders. To delete files, use the <code class="text_code-inline">rm</code> command, which stands for <i>“remove”</i>:</p>
+        <div class="text_code-box">
+          <p>rm about.html # will delete about.html from the current folder</p>
+        </div>
+        <p>If, however, the folder you’re trying to delete has files in it, the command prompt won’t delete it. Instead, it’ll give you a message that the folder is not empty:</p>
+        <div><img src="../../images/3-6/3-6_c.png" class="image_flex-large"></div>
+        <p>This measure is in place to keep you from accidentally deleting the files you need. If you still need to delete the folder, use the <code class="text_code-inline">rm</code> command, like this:</p>
+        <div class="text_code-box">
+          <p>rm -r images # will delete the images folder from the current folder</p>
+        </div>
+        <p>In this case, we call <code class="text_code-inline">-r</code> a flag. We say, “We called the <code class="text_code-inline">rm</code> command with the <code class="text_code-inline">r</code> flag.” This flag is responsible for recursively deleting files and folders. That means that the directory’s entire contents will be deleted. Be careful: deleting files with the <code class="text_code-inline">rm</code> and <code class="text_code-inline">rmdir</code> commands is irreversible. The files don’t go to the recycle bin; they’re permanently deleted.</p>
+      </div>
+      <div class="card_body">
+        <div class="title-topic">Cheat Sheet Command Line</div>
+        <div class="text_body">
+          <p>We’ve prepared a cheat sheet for you. If you forget any commands, remember to come back to this lesson. We didn’t cover all of the commands on the list, so give them a quick run-through even if you remember the previous lesson well.</p>
+          <p>
+            <ul>
+              <li><code class="text_code-inline">pwd</code> shows you what folder you’re in</li>
+              <li><code class="text_code-inline">ls</code> shows files in the folder you’re in</li>
+              <li><code class="text_code-inline">cd first-project</code> go to the <code class="text_code-inline">first-project</code> folder</li>
+              <li><code class="text_code-inline">cd first-project/< html ></code> go to the html folder in the <code class="text_code-inline">first-project</code> folder</li>
+              <li><code class="text_code-inline">cd ..</code> go up one level to the parent folder</li>
+              <li><code class="text_code-inline">cd ~</code> go to your home directory (that’s <code class="text_code-inline">/Users/students_yandex</code> in our case)</li>
+              <li><code class="text_code-inline">rm about.html</code> deletes the <code class="text_code-inline">about.html</code> file</li>
+              <li><code class="text_code-inline">rmdir images</code> deletes the <code class="text_code-inline">images</code> folder</li>
+              <li><code class="text_code-inline">rm -r second-project</code> deletes the <code class="text_code-inline">second-project</code> folder and everything in it</li>
+              <li>touch <code class="text_code-inline">index.htm style.css script.js</code> if several files need to be created, their names can be separated with spaces</li>
+            </ul>
+          </p>
+          <p>To avoid having to enter file and folder names in full, you can start to enter their name and press the Tab key. The command prompt will finish writing the directory on its own if the corresponding file or folder is in the current directory.</p>
+          <p>For example, if you’re in the <code class="text_code-inline">dev</code> folder, start typing <code class="text_code-inline">cd first</code> and press Tab. If the <code class="text_code-inline">first-project</code> folder is inside <code class="text_code-inline">dev</code>, the command prompt will automatically complete its name. You’ll just need to press Enter.</p>
+        </div>
+      </div>
+    </div>
+    <div class="card_body">
+      <div class="title-topic">Configuring Git</div>
+      <div class="text_body">
+        <p>You’re now a command prompt Jedi. In this lesson, we’re going to use it to configure Git. You need to choose a name for yourself, just like in a computer game. This will help other developers understand what changes you made. Let’s do that and get things underway with Git.</p>
+        <p><b>Configuration</b></p>
+        <p>If you’re working on macOS or Linux, launch the Terminal. If you’re using Windows, launch Git Bash. Now input your name and email address. To do that, go to the command line and run the command <code class="text_code-inline">git config</code> with the option <code class="text_code-inline">--global</code>. Input your info as the values for <code class="text_code-inline">user.name</code> and <code class="text_code-inline">user.email</code>:</p>
+        <div class="text_code-box">
+          <p>git config --global user.name "Students Yandex"</p>
+          <p><i># enter your first and last name or alias using Latin letters inside quotation marks</i></p>
+          <p>git config --global user.email studentsyandex@gmail.com</p>
+          <p><i># enter your real email address here</i></p>
+        </div>
+        <p>Now check to see what you get. Run the command git config with the option <code class="text_code-inline">--list</code>.</p>
+        <div class="text_code-box">
+          <p>git config <i>--list</i></p>
+          <p><i># use the command prompt to get the list of all config properties
+          </i></p>
+        </div>
+        <p>In response, the command prompt will display your configurations:</p>
+        <div class="text_code-box">
+          <p>user.name=Students Yandex</p>
+          <p>user.email=studentsyandex@gmail.com</p>
+        </div>
+        <p>Linux and macOS users will need to exit file view by pressing the Q key.</p>
+        <p><b>Where configuration settings are stored
+        </b></p>
+        <p>If you need to view or change Git configuration settings, it doesn’t matter which command prompt directory you’re in. Calling git config <code class="text_code-inline">--global</code> will work from wherever you are.</p>
+        <p>There it is! The first configuration settings are the most important because you can now fully use Git.</p>
+      </div>
+    </div>
+    <div class="card_body">
+      <div class="title-course">Connecting Git to the Project</div>
+      <div class="text_body">
+        <p>We need to turn our project folder into a git repository, so that Git can start working with it. That means that Git will start tracking all changes made inside that directory. To do that, go to the folder containing the project and enter the command:</p>
+        <div class="text_code-box">git init</div>
+        <p>The command prompt will reply with a message that the repository has been initialized.</p>
+        <p>Make the <code class="text_code-inline">first-project</code> folder a git repository. To do that, go to the <code class="text_code-inline">first-project</code> folder using the <code class="text_code-inline">cd</code> command, and write <code class="text_code-inline">git init</code> in the command line.</p>
+        <p>After that, run the <code class="text_code-inline">git status</code> command. Git will reply that this folder has two files, <code class="text_code-inline">index.html</code> and <code class="text_code-inline">style.css</code></p>
+        <div><img src="../../images/3-6/3-6_d.png" class="image_flex-large"></div>
+        <p>Git calls these files untracked files. That means that Git sees them, but it won’t be able to save their version right now if you try.</p>
+        <p>That’s not what we want. Our goal is to learn how to save versions. To do that, add the files first. You’ll need the <code class="text_code-inline">git add</code> command for this. When using it, indicate the file name that we want to preserve in its current form. For example, <code class="text_code-inline">git add index.html</code>.</p>
+        <p>If we want to save the current status of all files, we can jump to the option <code class="text_code-inline">--all</code>. <code class="text_code-inline">git add --all</code>, or <code class="text_code-inline">git add -A</code> for short:</p>
+        <div><img src="../../images/3-6/3-6_e.png" class="image_flex-large"></div>
+        <p>Files highlighted in green are ready to be saved in their current versions. That’s what the <code class="text_code-inline">git add</code> command tells Git. But we haven’t saved them yet. We have to tell Git what we want to save before we actually save anything.</p>
+        <p>In Git, saved file versions are called commits. Making a commit means saving the current state of your repository. We’ll tackle this in the next lesson.</p>
+        <p>If we edit any file right now, it’ll turn red again:</p>
+        <div><img src="../../images/3-6/3-6_f.png" class="image_flex-large"></div>
+        <p>Use <code class="text_code-inline">git add</code> to make the updated version go to the commit, like this:</p>
+        <div class="text_code-box">
+          <p>git add index.html</p>
+        </div>
+        <p>Or use the shortened version, <code class="text_code-inline">git add --all</code>:</p>
+        <div class="text_code-box">
+          <p>git add -all</p>
+        </div>
+        <p>This will add all modified files to be saved.</p>
+      </div>
+      <div class="card_body">
+        <div class="title-topic">Making the First Commit</div>
+        <div class="text_body">
+          <p>When all files are ready to be saved, we’ll make our first commit—that is, record the changes we’ve made so far. We do this using the command git commit with the option -m. -m is followed by the name of the commit in quotation marks:</p>
+          <p>PICK UP HERE!!!!!</p>
+        </div>
+      </div>
     </div>
     <!--End of page-->
   </div>
